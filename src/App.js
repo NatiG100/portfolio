@@ -1,7 +1,9 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <div className="App">
-      
+    <div style={{width:"100%"}}>
+      <Navbar/>
     </div>
   );
 }
