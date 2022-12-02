@@ -10,15 +10,15 @@ import {ReactComponent as Logo} from './../../assets/svg/logo.svg';
 
 const Navbar = () => {
   return (
-    <StyledNavbar id="about">
+    <StyledNavbar>
         <StyledNavbarWrapper>
             <Logo/>
             <StyledNavItemContainer>
-                <StyledNavItem href="#about"><em># </em>about</StyledNavItem>
-                <StyledNavItem href="#skills"><em># </em>skills</StyledNavItem>
-                <StyledNavItem href="#experience"><em># </em>experience</StyledNavItem>
-                <StyledNavItem href="#projects"><em># </em>projects</StyledNavItem>
-                <StyledNavItem href="#contact"><em># </em>contact</StyledNavItem>
+                <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="about"><em># </em>about</StyledNavItem>
+                <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="skills"><em># </em>skills</StyledNavItem>
+                <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="experience"><em># </em>experience</StyledNavItem>
+                <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="projects"><em># </em>projects</StyledNavItem>
+                <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="contact"><em># </em>contact</StyledNavItem>
                 <Button>Resume</Button>
             </StyledNavItemContainer>
         </StyledNavbarWrapper>
