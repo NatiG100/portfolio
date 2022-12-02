@@ -18,8 +18,8 @@ export const StyledNavbarWrapper = styled.div`
     align-items: center;
     height: 100%;
     svg{
-        height: 90px;
-        width: 90px;
+        height: 80px;
+        width: 80px;
     }
 `;
 
@@ -27,7 +27,7 @@ export const StyledNavItemContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
 `;
 
 export const StyledNavItem = styled.a`
@@ -36,6 +36,7 @@ export const StyledNavItem = styled.a`
     color: ${theme.colors.textDark};
     font-weight: 600;
     text-decoration:none;
+    letter-spacing: 1px;
     :active{
         color: ${theme.colors.text}
     }

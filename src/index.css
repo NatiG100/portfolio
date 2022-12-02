@@ -22,4 +22,5 @@ p, h6, h5, h4, h3, h2, h1, a, li{
 }
 *{
   box-sizing: border-box;
+  font-family: 'Alegreya Sans';
 }
