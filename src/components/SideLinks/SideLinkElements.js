@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from './../../theme';
 
 export const StyledSideLinkWrapper = styled.div`
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     ${({side})=>(side==="right"?`
         right: max(calc((100% - ${theme.size.appMaxWidth}) / 2), 10px);
