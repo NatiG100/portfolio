@@ -5,12 +5,12 @@ export const StyledButton = styled.button`
     outline: none;
     border: 1px solid ${theme.colors.primary};
     border-radius: 5px;
-    padding: 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: ${({size})=>(size==='lg'?"25px":"15px")};
+    padding-top: ${({size})=>(size==='lg'?"15px":"12px")};
+    padding-bottom: ${({size})=>(size==='lg'?"15px":"12px")};;
     transition: all 200ms ease-in-out;
     color: ${theme.colors.primary};
-    font-size: ${theme.font.md};    
+    font-size: ${({size})=>(size==='lg'?theme.font.lg:theme.font.md)};    
     background: none;
     text-transform: uppercase;
     letter-spacing: 3px;

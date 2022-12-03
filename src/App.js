@@ -1,10 +1,12 @@
 import Navbar from "./components/Navbar";
+import HeroSection from "./sections/HeroSection";
 
 function App() {
   return (
-    <div style={{width:"100%"}}>
+    <>
       <Navbar/>
-    </div>
+      <HeroSection/>
+    </>
   );
 }
 

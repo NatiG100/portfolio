@@ -8,7 +8,10 @@ position:fixed;
     left:0;
     right:0;
     width: 100%;
-    padding: 5px;
+    height: 80px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -21,7 +24,9 @@ export const StyledNavbarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     svg{
+        margin-top: 5px;
         height: 70px;
         width: 70px;
     }

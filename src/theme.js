@@ -8,7 +8,7 @@ const theme = {
         textDarker: "#6B6E70"
     },
     font:{
-        xxl:"2em",
+        xxl:"4.5em",
         xl:"1.5em",
         lg:"1.2em",
         md:"0.9em",
