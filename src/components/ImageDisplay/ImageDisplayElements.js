@@ -8,6 +8,9 @@ export const StyledImageDisplay = styled.div`
     :hover div{
         bottom: 3%;
     }
+    :hover span{
+        opacity:0 ;
+    }
 `;
 
 export const StyledImageBorder = styled.div`
@@ -30,7 +33,7 @@ export const StyledImage = styled.img`
     object-fit:cover ;
 `;
 
-export const StyledImageOverlay = styled.img`
+export const StyledImageOverlay = styled.span`
     position: absolute;
     top: 0px;
     right: calc(4%);
@@ -39,7 +42,4 @@ export const StyledImageOverlay = styled.img`
     border-radius:100% ;
     background-color:${theme.colors.primary}44 ;
     transition: all 200ms ease-in-out;
-    :hover{
-        opacity:0 ;
-    }
 `;
