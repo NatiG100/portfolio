@@ -14,6 +14,9 @@ position:fixed;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    background-color:${theme.colors.background}cc ;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 4px 15px #00000022;
 
 `;
 

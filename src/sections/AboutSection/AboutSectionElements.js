@@ -6,12 +6,20 @@ export const StyledAboutSection = styled.section`
     width: 100%;
     display: grid;
     grid-template-rows:max-content 1fr ;
+    grid-template-columns:1fr ;
     justify-content:center ;
     height: calc(100vh - 80px);
     min-height: 400px;
+    max-width: ${theme.size.appMaxWidth};
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+    padding-right: 6%;
 `;
 
 export const StyledAboutWrapper = styled.div`
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 800px;
     display:flex;
@@ -21,7 +29,7 @@ export const StyledAboutWrapper = styled.div`
 `;
 export const StyledP = styled.p`
     color: ${theme.colors.textDark};
-    font-size: ${theme.font.md};
+    font-size: ${theme.font.lg};
     letter-spacing: 2px;
     em{
         font-style: normal;
