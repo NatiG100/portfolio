@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./sections/HeroSection";
 import SideLinks from "./components/SideLinks";
 import AboutSection from "./sections/AboutSection";
+import SkillSection from "./sections/SkillSection";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <HeroSection/>
       <AboutSection/>
+      <SkillSection/>
     </>
   );
 }

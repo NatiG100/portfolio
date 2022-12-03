@@ -17,7 +17,7 @@ position:fixed;
     background-color:${theme.colors.background}dd ;
     backdrop-filter: blur(8px);
     box-shadow: 0px 2px 20px #00000044;
-
+    z-index: 1000;
 `;
 
 export const StyledNavbarWrapper = styled.div`
