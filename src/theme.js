@@ -4,7 +4,7 @@ const theme = {
         background: "#0B0C10",
         surface: "#15171F",
         text: "white",
-        textDark: "#7B7B80",
+        textDark: "#8F8F95",
         textDarker: "#6B6E70"
     },
     font:{
