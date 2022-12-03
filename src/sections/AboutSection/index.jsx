@@ -21,8 +21,8 @@ const AboutSection = () => {
                 user interface components by deploying React concepts.<br/><br/>
                 Proficient in translating designs & wireframes 
                 into high-quality code, and writing application interface code via 
-                <em> Javascriptand ReactJS workflows</em>. Adept at monitoring & <em>maintaining 
-                frontend performance and troubleshooting & debugging</em> the same 
+                <em> Javascript and ReactJS workflows</em>. Adept at monitoring & maintaining 
+                frontend performance and troubleshooting & debugging the same 
                 to bolster overall performance.
               </StyledP>
               <ImageDisplay img={profile} dimension="280px"/>

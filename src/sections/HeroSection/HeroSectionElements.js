@@ -16,6 +16,7 @@ export const StyledHeroSectionWrapper = styled.div`
     max-width: 800px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -31,13 +32,13 @@ export const StyledP = styled.p`
 export const StyledAbout = styled.p`
     color: ${theme.colors.textDark};
     font-size: ${theme.font.lg};
-    font-weight: 600;
+    font-weight: 300;
     text-align: center;
     text-overflow: wrap;
     white-space: pre-wrap;
     margin-top: 5px;
     max-width: 600px;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     em{
         font-style: normal;
         color: ${theme.colors.primary};
