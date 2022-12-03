@@ -8,9 +8,9 @@ import {
 } from './NavbarElements';
 import {ReactComponent as Logo} from './../../assets/svg/logo.svg';
 
-const Navbar = () => {
+const Navbar = ({show="true"}) => {
   return (
-    <StyledNavbar>
+    <StyledNavbar show={show}>
         <StyledNavbarWrapper>
             <Logo/>
             <StyledNavItemContainer>

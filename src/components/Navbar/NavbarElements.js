@@ -18,6 +18,8 @@ position:fixed;
     backdrop-filter: blur(8px);
     box-shadow: 0px 2px 20px #00000044;
     z-index: 1000;
+    transition: all 100ms ease-out;
+    ${({show})=>(show?"":"margin-top:-80px;")}
 `;
 
 export const StyledNavbarWrapper = styled.div`
