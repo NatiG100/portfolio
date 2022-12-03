@@ -4,11 +4,11 @@ import {Link} from 'react-scroll'
 
 export const StyledNavbar = styled.nav`
 position:fixed;
-top:0;
-left:0;
-right:0;
+    top:0;
+    left:0;
+    right:0;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -21,10 +21,9 @@ export const StyledNavbarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
     svg{
-        height: 80px;
-        width: 80px;
+        height: 70px;
+        width: 70px;
     }
 `;
 

@@ -8,15 +8,15 @@ const theme = {
         textDarker: "#6B6E70"
     },
     font:{
-        xl:"2em",
-        lg:"2em",
+        xxl:"2em",
+        xl:"1.5em",
         lg:"1.2em",
-        md:"1em",
-        sm:"0.9em",
-        xs:"0.8em",
+        md:"0.9em",
+        sm:"0.8em",
+        xs:"0.7em",
     },
     size:{
-        appMaxWidth:"1450px",
+        appMaxWidth:"1250px",
     }
 }
 export default theme;
