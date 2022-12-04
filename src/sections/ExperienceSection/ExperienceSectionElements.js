@@ -3,14 +3,32 @@ import theme from '../../theme';
 import {AiFillCaretRight as ArrowIcon} from 'react-icons/ai'
 
 export const StyledExperienceSection = styled.section`
-    margin-top: 80px;
+    padding-top: 6vh;
     width: 100%;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    justify-content: flex-end;
-    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-rows:max-content max-content 1fr ;
+    grid-template-columns:1fr ;
+    justify-content:center ;
+    height: 100vh;
     min-height: 400px;
+    max-width: ${theme.size.appMaxWidth};
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+`;
+
+export const StyledExperienceSectionWrapper = styled.div`
+    width: 100%;
+    max-width: ${theme.size.appMaxWidth};
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    gap: 8%;
+    height:max-content ;
+    margin-top: 3%;
 `;
 
 export const StyledWhereMenu = styled.div`
@@ -20,7 +38,10 @@ export const StyledWhereMenu = styled.div`
     display:flex ;
     align-items:center ;
     justify-content:center ;
-    gap: 0px;
+    margin-left: auto;
+    margin-right:auto ;
+    margin-top: 5%;
+    margin-bottom: 5%;
 `;
 export const StyledWhereMenuItem = styled.button`
     outline: none;
@@ -35,13 +56,17 @@ export const StyledWhereMenuItem = styled.button`
     font-weight:600 ;
     border: none;
     border-radius:0 ;
+    cursor: pointer;
+    :hover{
+        background-color:${theme.colors.primary}${({selected})=>(!selected&&"aa")} ;
+    }
 `;
 export const StyledJobOverview = styled.div`
     display:grid ;
     grid-template-rows: max-content max-content;
     max-width: 600px;
     width: 100%;
-    gap: 15px;
+    gap: 26px;
 `;
 
 export const StyledHeader = styled.div`
@@ -63,7 +88,8 @@ export const StyledH1 = styled.h1`
 `;
 
 export const StyledDate = styled.p`
-    font-size:${theme.font.sm} ;
+    font-size:${theme.font.md} ;
+    margin-left:28px ;
     color: ${theme.colors.textDarker};
     letter-spacing: 1.5px;
 `;
@@ -83,13 +109,14 @@ export const StyledResponsibility = styled.div`
 `;
 
 export const StyledArrowIcon = styled(ArrowIcon)`
-    font-size:${theme.font.xl} ;
+    font-size:${theme.font.lg} ;
+    margin-right: 4px;
     color: ${theme.colors.primary};
 `;
 
 export const StyledText = styled.p`
     font-size:${theme.font.lg} ;
-    font-weight:600 ;
+    font-weight:400 ;
     letter-spacing: 2px;
     color: ${theme.colors.textDark};
 `;
