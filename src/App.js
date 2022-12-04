@@ -4,6 +4,7 @@ import SideLinks from "./components/SideLinks";
 import AboutSection from "./sections/AboutSection";
 import SkillSection from "./sections/SkillSection";
 import { useEffect, useState } from "react";
+import ExperienceSection from "./sections/ExperienceSection";
 
 function App() {
   const [displayNav, setDisplayNav] = useState(true);
@@ -29,6 +30,7 @@ function App() {
       <HeroSection/>
       <AboutSection/>
       <SkillSection/>
+      <ExperienceSection/>
     </>
   );
 }
