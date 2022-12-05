@@ -96,7 +96,7 @@ export const StyledDate = styled.p`
 
 export const StyledResponsibilities = styled.div`
     width: 100%;
-    padding-left:10% ;
+    padding-left:7% ;
     display: flex;
     flex-direction:column ;
     gap: 20px;

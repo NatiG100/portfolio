@@ -17,6 +17,7 @@ export const StyledSideLinkWrapper = styled.div`
 
 export const StyledLinkContainer = styled.div`
     height: 100%;
+    width: 32px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -24,7 +25,7 @@ export const StyledLinkContainer = styled.div`
 `;
 
 export const StyledLink = styled.a`
-    color: ${theme.colors.textDarker}88;
+    color: ${theme.colors.textDarker};
     font-size: ${theme.font.lg};
     writing-mode: vertical-rl;
     text-decoration: none;

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import theme from '../../theme';
 
 export const StyledAboutSection = styled.section`
-    padding-top: 6vh;
     width: 100%;
     display: grid;
     grid-template-rows:max-content 1fr ;
@@ -13,8 +12,8 @@ export const StyledAboutSection = styled.section`
     max-width: ${theme.size.appMaxWidth};
     margin-left: auto;
     margin-right: auto;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 4%;
+    padding-right: 4%;
 `;
 
 export const StyledAboutWrapper = styled.div`

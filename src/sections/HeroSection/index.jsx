@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './../../components/uiElements/Button';
+import {scroller} from 'react-scroll';
 
 import {
     StyledButtonWrapper,
@@ -11,6 +12,14 @@ import {
 } from './HeroSectionElements';
 
 const HeroSection = () => {
+  const scrolltoProjects = ()=>{
+    scroller.scrollTo(
+      "projects",
+      {
+        smooth:true,
+      }
+    );
+  }
   return (
     <StyledHeroSection>
         <StyledHeroSectionWrapper>
@@ -23,7 +32,7 @@ const HeroSection = () => {
             user interface components by deploying <em>React concepts</em>. 
             </StyledAbout>
             <StyledButtonWrapper>
-                <Button size='lg'>view projects</Button>
+                <Button size='lg' onClick={scrolltoProjects}>view projects</Button>
             </StyledButtonWrapper>
         </StyledHeroSectionWrapper>
     </StyledHeroSection>
