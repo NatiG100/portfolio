@@ -30,7 +30,7 @@ export const StyledAboutWrapper = styled.div`
 export const StyledP = styled.p`
     color: ${theme.colors.textDark};
     font-size: ${theme.font.lg};
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 300;
     em{
         font-style: normal;

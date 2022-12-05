@@ -117,7 +117,7 @@ export const StyledArrowIcon = styled(ArrowIcon)`
 export const StyledText = styled.p`
     font-size:${theme.font.lg} ;
     font-weight:400 ;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: ${theme.colors.textDark};
 `;
 
