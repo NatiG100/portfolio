@@ -96,7 +96,7 @@ export const StyledDate = styled.p`
 
 export const StyledResponsibilities = styled.div`
     width: 100%;
-    padding-left:10% ;
+    padding-left:7% ;
     display: flex;
     flex-direction:column ;
     gap: 20px;
@@ -117,7 +117,7 @@ export const StyledArrowIcon = styled(ArrowIcon)`
 export const StyledText = styled.p`
     font-size:${theme.font.lg} ;
     font-weight:400 ;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: ${theme.colors.textDark};
 `;
 

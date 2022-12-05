@@ -34,6 +34,7 @@ export const StyledNavbarWrapper = styled.div`
         margin-top: 5px;
         height: 70px;
         width: 70px;
+        cursor: pointer;
     }
 `;
 

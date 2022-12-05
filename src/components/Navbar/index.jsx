@@ -8,11 +8,13 @@ import {
 } from './NavbarElements';
 import {ReactComponent as Logo} from './../../assets/svg/logo.svg';
 
+import { animateScroll } from 'react-scroll';
+
 const Navbar = ({show="true"}) => {
   return (
     <StyledNavbar show={show}>
         <StyledNavbarWrapper>
-            <Logo/>
+            <Logo onClick={animateScroll.scrollToTop}/>
             <StyledNavItemContainer>
                 <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="about" offset={-80}><em># </em>about</StyledNavItem>
                 <StyledNavItem activeClass="activeNavItem" spy={true}smooth={true} exact="true" to="skills" offset={-80}><em># </em>skills</StyledNavItem>
