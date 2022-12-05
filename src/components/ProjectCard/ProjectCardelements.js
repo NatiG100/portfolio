@@ -14,7 +14,7 @@ export const StyledProjectCard = styled.div`
     height: 290px;
     transition: all 200ms ease-in-out;
     :hover{
-        transform: scale(1.07);
+        transform: scale(1.03);
         box-shadow:0px 6px 8px #0008;
     }
     :hover .title{
@@ -44,9 +44,8 @@ export const StyledProjectCardMenu = styled.div`
 
 export const StyledProjectLink = styled.a`
     text-decoration: none;
-    background-color: #0000;
     svg{
-        font-size: ${theme.font.xl};
+        font-size: ${theme.font.anotherlg};
         color: ${theme.colors.textDark};
         transition: all 200ms ease-in-out;
         :hover{
@@ -69,6 +68,13 @@ export const StyledH1 = styled.h1`
     letter-spacing: 2px;
     color: ${theme.colors.text};
     transition: all 200ms ease-in-out;
+
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 `;
 
 export const StyledP = styled.p`
@@ -76,6 +82,13 @@ export const StyledP = styled.p`
     letter-spacing: 1.5px;
     font-weight: 400;
     color: ${theme.colors.textDark};
+
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 `;
 export const StyledTechStack = styled.div`
     width: 100%;
@@ -90,5 +103,6 @@ export const StyledTech = styled.div`
     font-size: ${theme.font.md};
     font-weight: 400;
     font-family: monospace;
-    color: ${theme.colors.textDark}
+    color: ${theme.colors.textDark};
+    white-space: nowrap;
 `;
