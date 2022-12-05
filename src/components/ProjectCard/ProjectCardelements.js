@@ -79,7 +79,7 @@ export const StyledH1 = styled.h1`
 
 export const StyledP = styled.p`
     font-size: ${theme.font.md};
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-weight: 400;
     color: ${theme.colors.textDark};
 

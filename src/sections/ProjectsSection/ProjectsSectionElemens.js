@@ -25,6 +25,7 @@ export const StyledProjectsSectionWrapper = styled.div`
     gap: 4%;
     min-height: 100%;
     padding-top: max(30px, 10%);
+    padding-bottom: max(30px, 10%);
     padding-left: max(15px, 3%);
     padding-right: max(15px, 3%);
 `;

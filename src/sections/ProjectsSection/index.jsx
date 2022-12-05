@@ -9,7 +9,7 @@ import {
 
 const ProjectsSection = () => {
   return (
-    <StyledProjectsSection>
+    <StyledProjectsSection id="projects">
         <SectionTitle title="My Projects"/>
         <StyledProjectsSectionWrapper>
             <ProjectCard
