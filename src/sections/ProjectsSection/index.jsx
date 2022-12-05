@@ -19,6 +19,55 @@ const ProjectsSection = () => {
               repo="#"
               techStack={["React", "Material UI", "GrapQL"]}
             />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
         </StyledProjectsSectionWrapper>
     </StyledProjectsSection>
   )

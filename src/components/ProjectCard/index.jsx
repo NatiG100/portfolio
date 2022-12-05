@@ -30,7 +30,7 @@ const ProjectCard = ({
             </StyledProjectCardMenu>
         </StyledProjectCardHeader>
         <StyledProjectCardBody>
-          <StyledH1>{title}</StyledH1>
+          <StyledH1 className='title'>{title}</StyledH1>
           <StyledP>{description}</StyledP>
             <StyledTechStack>
               {techStack.map((tech)=>(
