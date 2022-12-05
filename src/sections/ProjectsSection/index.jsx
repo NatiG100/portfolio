@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectCard from '../../components/ProjectCard';
 import SectionTitle from './../../components/SectionTitle';
 
 import {
@@ -11,14 +12,13 @@ const ProjectsSection = () => {
     <StyledProjectsSection>
         <SectionTitle title="My Projects"/>
         <StyledProjectsSectionWrapper>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
-            <p> Styled Project</p>
+            <ProjectCard
+              title="A simple recepie React Application"
+              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
+              link="#"
+              repo="#"
+              techStack={["React", "Material UI", "GrapQL"]}
+            />
         </StyledProjectsSectionWrapper>
     </StyledProjectsSection>
   )
