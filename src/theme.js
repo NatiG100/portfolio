@@ -9,6 +9,7 @@ const theme = {
     },
     font:{
         xxl:"4.5em",
+        xml:"2.5em",
         xl:"1.5em",
         lg:"1.2em",
         md:"0.9em",

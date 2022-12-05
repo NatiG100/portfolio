@@ -5,6 +5,7 @@ import AboutSection from "./sections/AboutSection";
 import SkillSection from "./sections/SkillSection";
 import { useEffect, useState } from "react";
 import ExperienceSection from "./sections/ExperienceSection";
+import ProjectsSection from "./sections/ProjectsSection";
 
 function App() {
   const [displayNav, setDisplayNav] = useState(true);
@@ -31,6 +32,7 @@ function App() {
       <AboutSection/>
       <SkillSection/>
       <ExperienceSection/>
+      <ProjectsSection/>
     </>
   );
 }
