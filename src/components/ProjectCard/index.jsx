@@ -21,7 +21,7 @@ const ProjectCard = ({
     techStack = []
 }) => {
   return (
-    <StyledProjectCard>
+    <StyledProjectCard id="projects">
         <StyledProjectCardHeader>
             <StyledProjectCardIcon/>
             <StyledProjectCardMenu>
