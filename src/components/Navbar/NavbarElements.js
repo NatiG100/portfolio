@@ -14,7 +14,7 @@ position:fixed;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color:${theme.colors.background}dd ;
+    background-color:${theme.colors.background}de ;
     backdrop-filter: blur(8px);
     box-shadow: 0px 2px 20px #00000044;
     z-index: 1000;
