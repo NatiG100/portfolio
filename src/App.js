@@ -9,10 +9,12 @@ import ProjectsSection from "./sections/ProjectsSection";
 
 function App() {
   const [displayNav, setDisplayNav] = useState(true);
+  const [isScrollAtTop, setIsScrollAtTop] = useState(window.scrollY<60);
   useEffect(()=>{
     let prevYPos = window.scrollY;
     const scrollHandler = (event)=>{
       let currentScrollPos = window.scrollY;
+      setIsScrollAtTop(window.scrollY<60); // set isScrollAtTop to true when scroll pos Y is less than 20px
       let delta = currentScrollPos - prevYPos;
       prevYPos = currentScrollPos;
       if(delta<0){
@@ -27,7 +29,7 @@ function App() {
   return (
     <>
       <SideLinks/>
-      <Navbar show={displayNav}/>
+      <Navbar show={displayNav} showShadow={isScrollAtTop}/>
       <HeroSection/>
       <AboutSection/>
       <SkillSection/>

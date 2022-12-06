@@ -10,9 +10,9 @@ import {ReactComponent as Logo} from './../../assets/svg/logo.svg';
 
 import { animateScroll } from 'react-scroll';
 
-const Navbar = ({show="true"}) => {
+const Navbar = ({show="true", showShadow}) => {
   return (
-    <StyledNavbar show={show}>
+    <StyledNavbar show={show} showShadow={showShadow}>
         <StyledNavbarWrapper>
             <Logo onClick={animateScroll.scrollToTop}/>
             <StyledNavItemContainer>

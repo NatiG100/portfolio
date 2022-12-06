@@ -16,7 +16,7 @@ position:fixed;
     padding-right: 20px;
     background-color:${theme.colors.background}de ;
     backdrop-filter: blur(8px);
-    box-shadow: 0px 2px 20px #00000044;
+    ${({showShadow})=>(!showShadow&&"box-shadow: 0px 6px 20px #00000099;")}
     z-index: 1000;
     transition: all 100ms ease-out;
     ${({show})=>(show?"":"margin-top:-80px;")}
