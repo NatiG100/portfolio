@@ -26,7 +26,7 @@ export const StyledTopLeft = styled.div`
     top: 0px;
     left: 0px;
     height: 40px;
-    width: 10%;
+    width: 14%;
     border-top: 2px solid #fff2;
     border-left: 2px solid #fff2;
 `;
@@ -36,7 +36,7 @@ export const StyledBottomRight = styled.div`
     top: 100%;
     right: 0px;
     height: 40px;
-    width: 10%;
+    width: 14%;
     border-bottom: 2px solid #fff2;
     border-right: 2px solid #fff2;
 `;
@@ -51,7 +51,7 @@ export const StyledFooterTextContainer = styled.div`
     right: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
@@ -69,8 +69,17 @@ export const StyledLink = styled.a`
     letter-spacing: 2.5px;
     font-size: ${theme.font.lg};
     color: ${theme.colors.text};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+    :hover{
+        color: ${theme.colors.primary};
+    }
     svg{
-        font-size: ${theme.font.xl};
+        font-size: ${theme.font.lg};
     }
 `;
 

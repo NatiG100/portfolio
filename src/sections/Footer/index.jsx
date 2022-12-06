@@ -20,7 +20,7 @@ const Footer = () => {
             <StyledBottomRight/>
             <StyledFooterTextContainer>
                 <StyledP>Designed & built by Natnael Gashu</StyledP>
-                <StyledLink><FaGithub/> View GitHub Repo</StyledLink>
+                <StyledLink href="#"><FaGithub/> <p>View GitHub Repo</p></StyledLink>
             </StyledFooterTextContainer>
         </StyledFooterWrapper>
     </StyledFooter>
