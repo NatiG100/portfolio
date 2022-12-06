@@ -18,21 +18,25 @@ export const StyledContactSection = styled.section`
 
 export const StyledContactSectionWrapper = styled.div`
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    gap: 5%;
+    height: 100%;
+    gap: 10%;
 `;
 
 export const StyledH1 = styled.h1`
     color: ${theme.colors.text};
-    font-size: ${theme.font.xl};
-    letter-spacing: 1.5px;
+    font-size: ${theme.font.xxl};
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-align: center;
 `;
 export const StyledP = styled.p`
-    font-size: ${theme.font.md};
+    font-size: ${theme.font.lg};
     color: ${theme.colors.textDark};
     letter-spacing: 1.5px;
     text-align: center;
