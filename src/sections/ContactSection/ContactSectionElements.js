@@ -5,7 +5,7 @@ export const StyledContactSection = styled.section`
     padding-top: 6vh;
     width: 100%;
     display: grid;
-    grid-template-rows:max-content max-content 1fr ;
+    grid-template-rows:max-content  1fr ;
     grid-template-columns:1fr ;
     justify-content:center ;
     min-height: 100vh;
@@ -18,14 +18,14 @@ export const StyledContactSection = styled.section`
 
 export const StyledContactSectionWrapper = styled.div`
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    gap: 10%;
+    gap: 3%;
 `;
 
 export const StyledH1 = styled.h1`

@@ -11,7 +11,7 @@ import {
 
 const ContactSection = () => {
   return (
-    <StyledContactSection>
+    <StyledContactSection id="contact">
         <SectionTitle title='Contact Me'/>
         <StyledContactSectionWrapper>
             <StyledH1>Get in Touch</StyledH1>
