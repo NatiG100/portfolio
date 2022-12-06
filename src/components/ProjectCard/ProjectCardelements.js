@@ -14,7 +14,7 @@ export const StyledProjectCard = styled.div`
     height: 290px;
     transition: all 200ms ease-in-out;
     :hover{
-        transform: scale(1.03);
+        transform: scale(1.05);
         box-shadow:0px 6px 8px #0008;
     }
     :hover .title{
