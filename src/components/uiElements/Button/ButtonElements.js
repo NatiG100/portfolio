@@ -19,4 +19,6 @@ export const StyledButton = styled.button`
     :hover{
         background-color: #ffffff14;
     }
+    width: max-content;
+    align-self: center;
 `;
