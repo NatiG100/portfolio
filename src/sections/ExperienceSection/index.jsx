@@ -17,8 +17,6 @@ import {
     StyledWhereMenuItem
 } from './ExperienceSectionElements'
 
-import  insa from './../../assets/img/profile.jpg'
-
 const ExperienceSection = () => {
     const [selectedExperience, setSelectedExperience] = useState(data.experience[0]);
   return (

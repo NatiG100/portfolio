@@ -8,6 +8,7 @@ import ExperienceSection from "./sections/ExperienceSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
 import Footer from "./sections/Footer";
+import {data} from './assets/data/data';
 
 function App() {
   const [displayNav, setDisplayNav] = useState(true);
@@ -32,7 +33,7 @@ function App() {
     <>
       <SideLinks/>
       <Navbar show={displayNav} showShadow={isScrollAtTop}/>
-      <HeroSection/>
+      <HeroSection data={data.personalInfo}/>
       <AboutSection/>
       <SkillSection/>
       <ExperienceSection/>

@@ -1,6 +1,16 @@
 import logo from './../img/profile.jpg';
 
 export const data = {
+    personalInfo:{
+        name: "Natnael Gashu",
+        whatDoYouDo:"I Build Web Application",
+        aboutYouBrief:
+            <>
+                    React Developer with hands-on experience in identifying web-based 
+                    user interactions along with designing & implementing highly-responsive 
+                    user interface components by deploying <em>React concepts</em>.
+            </>
+    },
     experience:[
         {
             company: "INSA",

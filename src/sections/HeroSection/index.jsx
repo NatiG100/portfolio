@@ -11,7 +11,7 @@ import {
     StyledAbout,
 } from './HeroSectionElements';
 
-const HeroSection = () => {
+const HeroSection = ({data}) => {
   const scrolltoProjects = ()=>{
     scroller.scrollTo(
       "projects",
@@ -24,12 +24,12 @@ const HeroSection = () => {
     <StyledHeroSection>
         <StyledHeroSectionWrapper>
             <StyledP>Hi, my name is</StyledP>
-            <StyledH><em>natnael gashu</em></StyledH>
-            <StyledH>I build web applications</StyledH>
+            <StyledH><em>{data.name}</em></StyledH>
+            <StyledH>{data.whatDoYouDo}</StyledH>
             <StyledAbout>
-            React Developer with hands-on experience in identifying web-based user 
-            interactions along with designing & implementing highly-responsive 
-            user interface components by deploying <em>React concepts</em>. 
+              {
+                data.aboutYouBrief
+              }
             </StyledAbout>
             <StyledButtonWrapper>
                 <Button size='lg' onClick={scrolltoProjects}>view projects</Button>
