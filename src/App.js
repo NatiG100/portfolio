@@ -36,8 +36,8 @@ function App() {
       <HeroSection data={data.personalInfo}/>
       <AboutSection data={data.personalInfo.about}/>
       <SkillSection data={data.skills}/>
-      <ExperienceSection/>
-      <ProjectsSection/>
+      <ExperienceSection data={data.experience}/>
+      <ProjectsSection data={data.projects}/>
       <ContactSection/>
       <Footer/>
     </>

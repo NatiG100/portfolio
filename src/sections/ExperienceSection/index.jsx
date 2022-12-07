@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import ImageDisplay from '../../components/ImageDisplay';
 import SectionTitle from './../../components/SectionTitle';
-import { data } from '../../assets/data/data';
 import {
     StyledArrowIcon,
     StyledDate,
@@ -17,14 +16,14 @@ import {
     StyledWhereMenuItem
 } from './ExperienceSectionElements'
 
-const ExperienceSection = () => {
-    const [selectedExperience, setSelectedExperience] = useState(data.experience[0]);
+const ExperienceSection = ({data=[]}) => {
+    const [selectedExperience, setSelectedExperience] = useState(data[0]);
   return (
       <StyledExperienceSection id="experience">
             <SectionTitle title='Experience'/>
             <StyledWhereMenu>
                 {
-                    data.experience.map((experience)=>(
+                    data.map((experience)=>(
                         <StyledWhereMenuItem 
                             selected={experience.company===selectedExperience.company} 
                             onClick={()=>{setSelectedExperience(experience)}}
