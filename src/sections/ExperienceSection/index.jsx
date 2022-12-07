@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ImageDisplay from '../../components/ImageDisplay';
 import SectionTitle from './../../components/SectionTitle';
 import {
@@ -19,18 +19,22 @@ import {
 import  insa from './../../assets/img/profile.jpg'
 
 const ExperienceSection = () => {
+    const experiences= ["INSA","2F CAPITAL", "TECHAWKS"];
+    const [selectedCompany, setSelectedCompany] = useState("INSA");
   return (
       <StyledExperienceSection id="experience">
             <SectionTitle title='Experience'/>
             <StyledWhereMenu>
-                <StyledWhereMenuItem selected="true">INSA</StyledWhereMenuItem>
-                <StyledWhereMenuItem>2F CAPITAL</StyledWhereMenuItem>
-                <StyledWhereMenuItem>TECHAWKS</StyledWhereMenuItem>
+                {
+                    experiences.map((experience)=>(
+                        <StyledWhereMenuItem selected={experience===selectedCompany} onClick={()=>{setSelectedCompany(experience)}}>{experience}</StyledWhereMenuItem>
+                    ))
+                }
             </StyledWhereMenu>
             <StyledExperienceSectionWrapper>
             <StyledJobOverview>
                 <StyledHeader>
-                    <StyledH1><em>#1</em> Software Developer <em>@INSA</em></StyledH1>
+                    <StyledH1><em>#1</em> Software Developer <em>@{selectedCompany}</em></StyledH1>
                     <StyledDate>July - December 2015</StyledDate> 
                 </StyledHeader>
                 <StyledResponsibilities>
