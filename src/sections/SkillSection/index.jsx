@@ -1,5 +1,4 @@
 import React from 'react'
-import { data } from '../../assets/data/data';
 import SectionTitle from '../../components/SectionTitle'
 import Skill from '../../components/Skill';
 
@@ -8,12 +7,12 @@ import {
     StyledSkillList
 } from './SkillSectionElements';
 
-const SkillSection = () => {
+const SkillSection = ({data}) => {
   return (
       <StyledSkillSection id="skills">
           <SectionTitle title="My Skills"/>
           <StyledSkillList>
-              {data.skills.map((skill)=>(
+              {data.map((skill)=>(
                 <Skill level={skill.level} title={skill.title} number={skill.id} key={skill.id}/>
               ))}
           </StyledSkillList>

@@ -35,7 +35,7 @@ function App() {
       <Navbar show={displayNav} showShadow={isScrollAtTop}/>
       <HeroSection data={data.personalInfo}/>
       <AboutSection data={data.personalInfo.about}/>
-      <SkillSection/>
+      <SkillSection data={data.skills}/>
       <ExperienceSection/>
       <ProjectsSection/>
       <ContactSection/>
