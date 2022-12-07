@@ -57,6 +57,7 @@ export const StyledWhereMenuItem = styled.button`
     border: none;
     border-radius:0 ;
     cursor: pointer;
+    transition: all 200ms ease-in-out;
     :hover{
         background-color:${theme.colors.primary}${({selected})=>(!selected&&"aa")} ;
     }

@@ -34,7 +34,7 @@ function App() {
       <SideLinks/>
       <Navbar show={displayNav} showShadow={isScrollAtTop}/>
       <HeroSection data={data.personalInfo}/>
-      <AboutSection/>
+      <AboutSection data={data.personalInfo.about}/>
       <SkillSection/>
       <ExperienceSection/>
       <ProjectsSection/>
