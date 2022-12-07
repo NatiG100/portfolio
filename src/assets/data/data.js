@@ -25,6 +25,50 @@ export const data = {
             </>,
         
     },
+    projects:[
+        {
+           title:"A simple recepie React Application",
+           description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
+           repo:"#",
+           link:"#",
+            techStack:["React", "Material UI", "GrapQL"]
+        },
+        {
+            title:"A simple recepie React Applicatio",
+            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
+            repo:"#",
+            link:"#",
+             techStack:["React", "Material UI", "GrapQL"]
+         },
+         {
+            title:"A simple recepie React Applicati",
+            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
+            repo:"#",
+            link:"#",
+             techStack:["React", "Material UI", "GrapQL"]
+         },
+         {
+            title:"A simple recepie React Applicat",
+            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
+            repo:"#",
+            link:"#",
+             techStack:["React", "Material UI", "GrapQL"]
+         },
+         {
+            title:"A simple recepie React Applica",
+            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
+            repo:"#",
+            link:"#",
+             techStack:["React", "Material UI", "GrapQL"]
+         },
+         {
+            title:"A simple recepie React Applic",
+            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
+            repo:"#",
+            link:"#",
+             techStack:["React", "Material UI", "GrapQL"]
+         },
+    ],
     experience:[
         {
             company: "INSA",
@@ -37,11 +81,11 @@ export const data = {
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
                 {
-                    id:1,
+                    id:2,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
                 {
-                    id:1,
+                    id:3,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
             ]

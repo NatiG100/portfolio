@@ -7,67 +7,16 @@ import {
     StyledProjectsSectionWrapper
 } from './ProjectsSectionElemens';
 
-const ProjectsSection = () => {
+const ProjectsSection = ({data=[]}) => {
   return (
     <StyledProjectsSection id="projects">
         <SectionTitle title="My Projects"/>
         <StyledProjectsSectionWrapper>
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
-            <ProjectCard
-              title="A simple recepie React Application"
-              description="This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie"
-              link="#"
-              repo="#"
-              techStack={["React", "Material UI", "GrapQL"]}
-            />
+          {
+            data.map((project)=>(
+              <ProjectCard {...project} key={project.title}/>
+            ))
+          }
         </StyledProjectsSectionWrapper>
     </StyledProjectsSection>
   )
