@@ -9,14 +9,17 @@ import {
     StyledP
 } from './ContactSectionElements';
 
-const ContactSection = () => {
+const ContactSection = ({paragraph="", header="", email=""}) => {
+  const handleSayHello = ()=>{
+    window.open("mailto:"+email,"_self");
+  }
   return (
     <StyledContactSection id="contact">
         <SectionTitle title='Contact Me'/>
         <StyledContactSectionWrapper>
-            <StyledH1>Get in Touch</StyledH1>
-            <StyledP>I'm currently looking for new opportunities in React web development</StyledP>
-            <Button size="lg">Say Hello</Button>
+            <StyledH1>{header}</StyledH1>
+            <StyledP>{paragraph}</StyledP>
+            <Button size="lg" onClick={handleSayHello}>Say Hello</Button>
         </StyledContactSectionWrapper>
     </StyledContactSection>
   )

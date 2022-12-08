@@ -42,7 +42,11 @@ function App() {
       <SkillSection data={data.skills}/>
       <ExperienceSection data={data.experience}/>
       <ProjectsSection data={data.projects}/>
-      <ContactSection/>
+      <ContactSection 
+        email={data.personalInfo.email}
+        header={data.contactSection.header}
+        paragraph={data.contactSection.paragraph}
+      />
       <Footer/>
     </>
   );

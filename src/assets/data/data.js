@@ -28,6 +28,10 @@ export const data = {
             </>,
         
     },
+    contactSection:{
+        header: "Get in Touch",
+        paragraph: "I'm currently looking for new opportunities in React web development",
+    },
     projects:[
         {
            title:"A simple recepie React Application",
