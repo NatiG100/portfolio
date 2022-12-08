@@ -1,11 +1,16 @@
 import React from "react";
 import {
     StyledNavigation,
-    StyledNavigationWrap
+    StyledNavigationWrap,
+    StyledCloseNav
 } from './NavigationElements';
 import {
     StyledNavItem
 }from './../Navbar/NavbarElements'
+import {ReactComponent as Logo} from './../../assets/svg/logo.svg'
+import { animateScroll } from "react-scroll";
+import { IoMdClose} from 'react-icons/io';
+
 
 import Button from '../uiElements/Button';
 
@@ -13,6 +18,10 @@ const Navigation = ({show=false, close=()=>{}}) => {
   return (
     <StyledNavigation show={show}>
       <StyledNavigationWrap>
+        <StyledCloseNav show={show} onClick={close}>
+            <IoMdClose/>
+        </StyledCloseNav>
+      <Logo onClick={()=>{animateScroll.scrollToTop();close();}} style={{height:"100px",marginBottom:"30px"}}/>
         <StyledNavItem
           activeClass="activeNavItem"
           spy={true}

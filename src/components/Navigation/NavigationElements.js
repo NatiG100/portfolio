@@ -1,6 +1,21 @@
 import styled from "styled-components";
 import theme from "../../theme";
 
+export const StyledCloseNav = styled.button`
+    border: none;
+    outline: none;
+    background-color: #fff0;
+    color:${theme.colors.primary}77;
+    transition: all 200ms ease-in-out;
+    display:${({show})=>(show?"inline":"none")};
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    font-size: ${theme.font.xml};
+    :hover{
+        color:${theme.colors.primary};
+    }
+`;
 export const StyledNavigation = styled.nav`
     position: fixed;
     top: 0;
@@ -29,7 +44,7 @@ export const StyledNavigationWrap = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 35px;
 `;
 
 
