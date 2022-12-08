@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import theme from "../../theme";
-import {Link} from 'react-scroll'
+import {Link} from 'react-scroll';
 
 export const StyledNavbar = styled.nav`
 position:fixed;
@@ -56,6 +56,16 @@ export const StyledNavItem = styled(Link)`
         color: ${theme.colors.text};
     }
     em{
+        color: ${theme.colors.primary};
+    }
+`;
+
+export const StyledMenu = styled.button`
+    border: none;
+    outline: none;
+    background-color: #fff0;
+    svg{
+        height: 45px;
         color: ${theme.colors.primary};
     }
 `;

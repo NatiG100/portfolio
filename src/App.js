@@ -15,6 +15,13 @@ import {data} from './assets/data/data';
 function App() {
   const [displayNav, setDisplayNav] = useState(true);
   const [isScrollAtTop, setIsScrollAtTop] = useState(window.scrollY<60);
+  const [displayMobileNav,setDisplayMobileNav] = useState(false);
+  const handleMenuClick = ()=>{
+    setDisplayMobileNav(true);
+  }
+  const handleCloseNav = ()=>{
+    setDisplayMobileNav(false);
+  }
   useEffect(()=>{
     let prevYPos = window.scrollY;
     const scrollHandler = (event)=>{
@@ -38,8 +45,8 @@ function App() {
         linkedIn = {data.personalInfo.linkedIn}
         gitHub = {data.personalInfo.github}
       />
-      <Navbar show={displayNav} showShadow={isScrollAtTop}/>
-      <Navigation/>
+      <Navbar show={displayNav} showShadow={isScrollAtTop} onMenuClick={handleMenuClick}/>
+      <Navigation show={displayMobileNav} close={handleCloseNav}/>
       <HeroSection data={data.personalInfo}/>
       <AboutSection data={data.personalInfo.about}/>
       <SkillSection data={data.skills}/>

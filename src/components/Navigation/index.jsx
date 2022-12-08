@@ -9,9 +9,9 @@ import {
 
 import Button from '../uiElements/Button';
 
-const Navifation = () => {
+const Navigation = ({show=false, close=()=>{}}) => {
   return (
-    <StyledNavigation>
+    <StyledNavigation show={show}>
       <StyledNavigationWrap>
         <StyledNavItem
           activeClass="activeNavItem"
@@ -20,6 +20,7 @@ const Navifation = () => {
           exact="true"
           to="about"
           offset={-80}
+          onClick={close}
         >
           <em># </em>about
         </StyledNavItem>
@@ -30,6 +31,7 @@ const Navifation = () => {
           exact="true"
           to="skills"
           offset={-80}
+          onClick={close}
         >
           <em># </em>skills
         </StyledNavItem>
@@ -40,6 +42,7 @@ const Navifation = () => {
           exact="true"
           to="experience"
           offset={-80}
+          onClick={close}
         >
           <em># </em>experience
         </StyledNavItem>
@@ -50,6 +53,7 @@ const Navifation = () => {
           exact="true"
           to="projects"
           offset={-80}
+          onClick={close}
         >
           <em># </em>projects
         </StyledNavItem>
@@ -60,6 +64,7 @@ const Navifation = () => {
           exact="true"
           to="contact"
           offset={-80}
+          onClick={close}
         >
           <em># </em>contact
         </StyledNavItem>
@@ -69,4 +74,4 @@ const Navifation = () => {
   );
 };
 
-export default Navifation;
+export default Navigation;

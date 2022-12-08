@@ -10,13 +10,15 @@ export const StyledNavigation = styled.nav`
     height: 100%;
     width: 100vw;
     background-color: ${theme.colors.background};
-
     overflow-y: auto;
     display: flex;
     justify-content: flex-start;
     justify-content: center;
     padding-top: 5%;
     z-index: 2000;
+    transition: all 400ms ease-in-out;
+    margin-top:${({show})=>(show?"0":"-100%")};
+    opacity:${({show})=>(show?"1":"0")}; ;
 `;
 
 export const StyledNavigationWrap = styled.div`
