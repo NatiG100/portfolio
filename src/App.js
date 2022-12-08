@@ -8,6 +8,8 @@ import ExperienceSection from "./sections/ExperienceSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
 import Footer from "./sections/Footer";
+import Navigation from './components/Navigation';
+
 import {data} from './assets/data/data';
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
         gitHub = {data.personalInfo.github}
       />
       <Navbar show={displayNav} showShadow={isScrollAtTop}/>
+      <Navigation/>
       <HeroSection data={data.personalInfo}/>
       <AboutSection data={data.personalInfo.about}/>
       <SkillSection data={data.skills}/>
