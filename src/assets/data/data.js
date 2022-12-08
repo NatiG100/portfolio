@@ -1,4 +1,7 @@
 import logo from './../img/profile.jpg';
+import insa from './../img/insa.png';
+import techawks from './../img/techawks.jpg';
+import twoF from './../img/2f.png';
 
 export const data = {
     personalInfo:{
@@ -81,7 +84,7 @@ export const data = {
             company: "INSA",
             jobTitle: "System Developer",
             date: "July - December 2015",
-            logo:logo,
+            logo:insa,
             responsibilities:[
                 {
                     id:1,
@@ -101,18 +104,18 @@ export const data = {
             company: "2F CAPITAL",
             jobTitle: "Frontend Developer",
             date: "July - December 2015",
-            logo:logo,
+            logo:twoF,
             responsibilities:[
                 {
                     id:1,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
                 {
-                    id:1,
+                    id:2,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
                 {
-                    id:1,
+                    id:3,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
             ]
@@ -121,18 +124,18 @@ export const data = {
             company: "TECHAWKS",
             jobTitle: "React Developer",
             date: "July - December 2015",
-            logo:logo,
+            logo:techawks,
             responsibilities:[
                 {
                     id:1,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
                 {
-                    id:1,
+                    id:2,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
                 {
-                    id:1,
+                    id:3,
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
             ]
