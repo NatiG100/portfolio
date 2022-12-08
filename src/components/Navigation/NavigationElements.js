@@ -27,18 +27,17 @@ export const StyledNavigation = styled.nav`
     background-color: ${theme.colors.background};
     overflow-y: auto;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 5%;
     z-index: 2000;
     transition: all 400ms ease-in-out;
-    margin-top:${({show})=>(show?"0":"-100%")};
-    opacity:${({show})=>(show?"1":"0")}; ;
+    margin-top:${({show})=>(show?"0":"-100vh")};
+    opacity:${({show})=>(show?"1":"0")};
 `;
 
 export const StyledNavigationWrap = styled.div`
     height: max-content;
-    width: 94%;
+    width: 80%;
     max-width: 400px;
     display: flex;
     flex-direction: column;

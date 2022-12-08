@@ -21,7 +21,7 @@ const Navigation = ({show=false, close=()=>{}}) => {
         <StyledCloseNav show={show} onClick={close}>
             <IoMdClose/>
         </StyledCloseNav>
-      <Logo onClick={()=>{animateScroll.scrollToTop();close();}} style={{height:"100px",marginBottom:"30px"}}/>
+      <Logo onClick={()=>{animateScroll.scrollToTop();close();}} style={{height:"100px",width:"100px",marginBottom:"30px", padding:"0"}}/>
         <StyledNavItem
           activeClass="activeNavItem"
           spy={true}

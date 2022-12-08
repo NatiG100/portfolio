@@ -10,8 +10,6 @@ position:fixed;
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content:space-between ;
-    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
     background-color:${theme.colors.background}de ;
@@ -42,6 +40,23 @@ export const StyledNavItemContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    @media (max-width: ${theme.breakPoints.md}){
+        display: none;
+    }
+`;
+
+export const StyledMenu = styled.button`
+    border: none;
+    outline: none;
+    background-color: #fff0;
+    svg{
+        height: 45px;
+        color: ${theme.colors.primary};
+    };
+    display: none;
+    @media (max-width: ${theme.breakPoints.md}){
+        display: block;
+    }
 `;
 
 export const StyledNavItem = styled(Link)`
@@ -56,16 +71,6 @@ export const StyledNavItem = styled(Link)`
         color: ${theme.colors.text};
     }
     em{
-        color: ${theme.colors.primary};
-    }
-`;
-
-export const StyledMenu = styled.button`
-    border: none;
-    outline: none;
-    background-color: #fff0;
-    svg{
-        height: 45px;
         color: ${theme.colors.primary};
     }
 `;

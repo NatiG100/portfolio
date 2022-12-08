@@ -5,7 +5,7 @@ const theme = {
         surface: "#15171F",
         text: "white",
         textDark: "#8F8F95",
-        textDarker: "#6B6E70"
+        textDarker: "#6B6E70",
     },
     font:{
         xxl:"4.5em",
@@ -19,6 +19,10 @@ const theme = {
     },
     size:{
         appMaxWidth:"1250px",
+    },
+    breakPoints:{
+        md:"1068px",
+        sm:"768",
     }
 }
 export default theme;
