@@ -31,7 +31,11 @@ function App() {
   },[])
   return (
     <>
-      <SideLinks/>
+      <SideLinks 
+        email={data.personalInfo.email}
+        linkedIn = {data.personalInfo.linkedIn}
+        gitHub = {data.personalInfo.github}
+      />
       <Navbar show={displayNav} showShadow={isScrollAtTop}/>
       <HeroSection data={data.personalInfo}/>
       <AboutSection data={data.personalInfo.about}/>

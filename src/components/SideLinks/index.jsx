@@ -9,22 +9,22 @@ import {
     StyledSideLinkWrapper
 } from './SideLinkElements';
 
-const SideLinks = () => {
+const SideLinks = ({email="#", linkedIn="#",gitHub="#"}) => {
   return (
     <>
         <StyledSideLinkWrapper>
             <StyledLinkContainer>
-                <StyledLink href='#'>
+                <StyledLink href={gitHub} target="_blank">
                     <AiFillGithub/>
                 </StyledLink>
-                <StyledLink href='#'>
+                <StyledLink href={linkedIn} target="_blank">
                     <AiFillLinkedin/>
                 </StyledLink>
             </StyledLinkContainer>
             <Divider direction='vertical' height="150px"/>
         </StyledSideLinkWrapper>
         <StyledSideLinkWrapper side="right">
-            <StyledLink href="#">natnaelgashu2022@gmail.com</StyledLink>
+            <StyledLink href={`mailto:${email}`}>{email}</StyledLink>
             <Divider direction='vertical' height="150px"/>
         </StyledSideLinkWrapper>
     </>

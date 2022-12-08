@@ -3,6 +3,9 @@ import logo from './../img/profile.jpg';
 export const data = {
     personalInfo:{
         name: "Natnael Gashu",
+        email:"natnaelgashu2022@gmail.com",
+        github:"https://github.com/NatiG100",
+        linkedIn:"https://www.linkedin.com/in/natnael-gashu-b02841233/",
         whatDoYouDo:"I Build Web Application",
         aboutYouBrief:
             <>
