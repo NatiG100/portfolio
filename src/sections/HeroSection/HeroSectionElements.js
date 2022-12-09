@@ -12,7 +12,7 @@ export const StyledHeroSection = styled.section`
 `;
 
 export const StyledHeroSectionWrapper = styled.div`
-    width: 100%;
+    width: 95%;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -21,13 +21,19 @@ export const StyledHeroSectionWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    @media ${theme.breakPoints.device.laptop}{
+        gap:10px;
+    }
 `;
 
 export const StyledP = styled.p`
     color: ${theme.colors.primary};
-    font-size: ${theme.font.lg};
     letter-spacing: 2px;
+    font-size:${theme.font.anotherlg};
     font-weight: 500;
+    @media ${theme.breakPoints.device.laptop}{
+        font-size: ${theme.font.lg};
+    }
 `;
 export const StyledAbout = styled.p`
     color: ${theme.colors.textDark};
@@ -54,6 +60,12 @@ export const StyledH = styled.h1`
     em{
         color: ${theme.colors.text};
         font-style: normal;
+    }
+    @media ${theme.breakPoints.device.laptop}{
+        font-size: 7vw;
+    }
+    @media ${theme.breakPoints.device.tablet}{
+        font-size: ${theme.font.xml};
     }
 `;
 

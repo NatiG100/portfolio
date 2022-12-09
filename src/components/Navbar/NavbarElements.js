@@ -40,7 +40,7 @@ export const StyledNavItemContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    @media (max-width: ${theme.breakPoints.md}){
+    @media ${theme.breakPoints.device.laptop}{
         display: none;
     }
 `;
@@ -54,7 +54,7 @@ export const StyledMenu = styled.button`
         color: ${theme.colors.primary};
     };
     display: none;
-    @media (max-width: ${theme.breakPoints.md}){
+    @media ${theme.breakPoints.device.laptop}{
         display: block;
     }
 `;
