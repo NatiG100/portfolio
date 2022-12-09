@@ -7,8 +7,7 @@ export const StyledAboutSection = styled.section`
     grid-template-rows:max-content 1fr ;
     grid-template-columns:1fr ;
     justify-content:center ;
-    height: calc(100vh - 80px);
-    min-height: 400px;
+    min-height: 100vh ;
     max-width: ${theme.size.appMaxWidth};
     margin-left: auto;
     margin-right: auto;
@@ -25,12 +24,25 @@ export const StyledAboutWrapper = styled.div`
     grid-template-columns:1fr max-content ;
     align-items: center;
     justify-content: center;
+    @media ${theme.breakPoints.device.laptop}{
+        max-width: 600px;
+        grid-template-columns:1fr;
+        grid-template-rows:max-content max-content;
+        margin-top: 7%;
+        gap:7%;
+        align-items: center;
+        justify-items:center;
+    }
 `;
 export const StyledP = styled.p`
     color: ${theme.colors.textDark};
     font-size: ${theme.font.lg};
     letter-spacing: 1px;
     font-weight: 300;
+    @media ${theme.breakPoints.device.laptop}{
+        grid-row: 2;
+        text-align: center;
+    }
     em{
         font-style: normal;
         color: ${theme.colors.primary};
