@@ -25,5 +25,8 @@ export const StyledSkillList = styled.div`
     display: flex;
     flex-direction:column ;
     gap: 25px;
+    @media ${theme.breakPoints.device.tablet}{
+        gap:15px;
+    }
 `;
 

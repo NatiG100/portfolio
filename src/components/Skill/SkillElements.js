@@ -7,6 +7,9 @@ export const StyledSkillContainer = styled.div`
     align-items: center;
     gap: 3%;
     width: 100%;
+    @media ${theme.breakPoints.device.tablet}{
+        grid-template-columns:125px 1fr ;
+    }
 `;
 
 export const StyledSkillTitle = styled.p`
@@ -17,6 +20,10 @@ export const StyledSkillTitle = styled.p`
     em{
         font-style:normal;
         color: ${theme.colors.primary};
+    }
+    @media ${theme.breakPoints.device.tablet}{
+        letter-spacing: 1.5px;
+        font-size:1em;
     }
 `;
 

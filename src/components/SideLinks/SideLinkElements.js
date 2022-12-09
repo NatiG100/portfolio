@@ -13,6 +13,9 @@ export const StyledSideLinkWrapper = styled.div`
     grid-template-rows:repeat(2, max-content);
     justify-items:center ;
     gap:25px;
+    @media ${theme.breakPoints.device.tablet}{
+        display: none;
+    }
 `;
 
 export const StyledLinkContainer = styled.div`
