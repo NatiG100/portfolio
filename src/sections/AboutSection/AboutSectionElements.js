@@ -11,8 +11,8 @@ export const StyledAboutSection = styled.section`
     max-width: ${theme.size.appMaxWidth};
     margin-left: auto;
     margin-right: auto;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 4%;
+
 `;
 
 export const StyledAboutWrapper = styled.div`
@@ -24,14 +24,13 @@ export const StyledAboutWrapper = styled.div`
     grid-template-columns:1fr max-content ;
     align-items: center;
     justify-content: center;
+    min-height: max-content;
     @media ${theme.breakPoints.device.laptop}{
-        max-width: 600px;
-        grid-template-columns:1fr;
-        grid-template-rows:max-content max-content;
-        margin-top: 7%;
-        gap:7%;
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-items:center;
+        justify-content: center;
+        gap: 20px;
     }
 `;
 export const StyledP = styled.p`
@@ -40,7 +39,6 @@ export const StyledP = styled.p`
     letter-spacing: 1px;
     font-weight: 300;
     @media ${theme.breakPoints.device.laptop}{
-        grid-row: 2;
         text-align: center;
     }
     em{

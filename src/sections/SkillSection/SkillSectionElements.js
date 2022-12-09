@@ -2,15 +2,14 @@ import styled from 'styled-components';
 import theme from '../../theme';
 
 export const StyledSkillSection = styled.section`
-    padding-top: 6vh;
     width: 100%;
     display: grid;
     grid-template-rows:max-content 1fr ;
     grid-template-columns:1fr ;
     justify-content:center ;
     align-items:center ;
-    height: calc(100vh - 80px);
-    min-height: 400px;
+    min-height:100vh;
+    height: max-content;
     max-width: ${theme.size.appMaxWidth};
     margin-left: auto;
     margin-right: auto;
