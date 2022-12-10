@@ -50,7 +50,8 @@ export const StyledMenu = styled.button`
     outline: none;
     background-color: #fff0;
     svg{
-        height: 45px;
+        height: 35px;
+        width: 35px;
         color: ${theme.colors.primary};
     };
     display: none;

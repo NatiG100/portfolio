@@ -33,10 +33,16 @@ export const StyledH1 = styled.h1`
     letter-spacing: 1px;
     white-space: nowrap;
     text-align: center;
+    @media ${theme.breakPoints.device.tablet}{
+        font-size:${theme.font.xml} ;
+    }
 `;
 export const StyledP = styled.p`
     font-size: ${theme.font.lg};
     color: ${theme.colors.textDark};
     letter-spacing: 1.5px;
     text-align: center;
+    @media ${theme.breakPoints.device.tablet}{
+        font-size: ${theme.font.md};
+    }
 `;
