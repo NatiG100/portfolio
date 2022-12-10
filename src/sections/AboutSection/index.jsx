@@ -17,7 +17,7 @@ const AboutSection = ({data=""}) => {
               <StyledP>
                 {data}
               </StyledP>
-              <ImageDisplay img={profile} dimension="240px"/>
+              <ImageDisplay img={profile} dimension="220px"/>
           </StyledAboutWrapper>
       </StyledAboutSection>
   )

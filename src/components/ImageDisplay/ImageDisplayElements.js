@@ -32,9 +32,11 @@ export const StyledImage = styled.img`
     width: 92%;
     border-radius:100% ;
     object-fit:cover ;
+    aspect-ratio:unset;
 `;
 
 export const StyledImageOverlay = styled.span`
+    pointer-events:none;
     position: absolute;
     top: 0px;
     right: calc(4%);

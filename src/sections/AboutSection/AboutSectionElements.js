@@ -41,12 +41,11 @@ export const StyledP = styled.p`
     color: ${theme.colors.textDark};
     font-size: ${theme.font.lg};
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 500;
     @media ${theme.breakPoints.device.laptop}{
-        text-align: justify;
+        text-align: center;
         letter-spacing:0px ;
         font-size:${theme.font.lg} ;
-        text-indent:30px;
     }
     em{
         font-style: normal;
