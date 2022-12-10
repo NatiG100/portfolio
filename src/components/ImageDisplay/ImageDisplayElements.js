@@ -5,6 +5,7 @@ export const StyledImageDisplay = styled.div`
     height:${({dimension})=>(dimension)};
     width:${({dimension})=>(dimension)};
     position: relative;
+    flex-shrink:0 ;
     :hover div{
         bottom: 3%;
     }

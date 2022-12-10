@@ -3,7 +3,6 @@ import theme from '../../theme';
 import {AiFillCaretRight as ArrowIcon} from 'react-icons/ai'
 
 export const StyledExperienceSection = styled.section`
-    padding-top: 6vh;
     width: 100%;
     display: grid;
     grid-template-rows:max-content max-content 1fr ;
@@ -29,6 +28,10 @@ export const StyledExperienceSectionWrapper = styled.div`
     gap: 8%;
     height:max-content ;
     margin-top: 3%;
+    @media ${theme.breakPoints.device.tablet}{
+        flex-direction:column-reverse ;
+        gap: 35px;
+    }
 `;
 
 export const StyledWhereMenu = styled.div`
@@ -63,11 +66,13 @@ export const StyledWhereMenuItem = styled.button`
     }
 `;
 export const StyledJobOverview = styled.div`
+    flex-shrink:1 ;
     display:grid ;
     grid-template-rows: max-content max-content;
     max-width: 600px;
     width: 100%;
     gap: 26px;
+
 `;
 
 export const StyledHeader = styled.div`
