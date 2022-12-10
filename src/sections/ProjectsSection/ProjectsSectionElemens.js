@@ -13,9 +13,11 @@ export const StyledProjectsSection = styled.section`
     padding-right: 6%;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow:hide ;
 `;
 
 export const StyledProjectsSectionWrapper = styled.div`
+
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

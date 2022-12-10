@@ -13,13 +13,17 @@ export const StyledAboutSection = styled.section`
     margin-right: auto;
     padding: 4%;
 
+    padding-top: 55px;
+    padding-bottom: 55px;
 `;
 
 export const StyledAboutWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 680px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display:grid;
     grid-template-columns:1fr max-content ;
     align-items: center;
@@ -39,7 +43,10 @@ export const StyledP = styled.p`
     letter-spacing: 1px;
     font-weight: 300;
     @media ${theme.breakPoints.device.laptop}{
-        text-align: center;
+        text-align: justify;
+        letter-spacing:0px ;
+        font-size:${theme.font.lg} ;
+        text-indent:30px;
     }
     em{
         font-style: normal;
