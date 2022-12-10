@@ -11,6 +11,7 @@ import Footer from "./sections/Footer";
 import Navigation from './components/Navigation';
 
 import {data} from './assets/data/data';
+import Links from "./sections/Links";
 
 function App() {
   const [displayNav, setDisplayNav] = useState(true);

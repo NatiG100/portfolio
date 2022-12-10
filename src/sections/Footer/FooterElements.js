@@ -7,27 +7,27 @@ export const StyledFooter = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 80px;
     margin-left:auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom:30px ;
 `;
 
 export const StyledFooterWrapper = styled.div`
     width: 100%;
     max-width: 400px;
     position: relative;
-    height: 50px;
     margin-left: auto;
     margin-right: auto;
+    height: 80px;
 `;
 
 export const StyledTopLeft = styled.div`
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 40px;
+    height: 30%;
     width: 14%;
     border-top: 2px solid #fff2;
     border-left: 2px solid #fff2;
@@ -35,9 +35,9 @@ export const StyledTopLeft = styled.div`
 
 export const StyledBottomRight = styled.div`
     position: absolute;
-    top: 100%;
+    bottom: 0;
     right: 0px;
-    height: 40px;
+    height:30% ;
     width: 14%;
     border-bottom: 2px solid #fff2;
     border-right: 2px solid #fff2;
@@ -56,8 +56,8 @@ export const StyledFooterTextContainer = styled.div`
     gap: 7px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 `;
 
 export const StyledP = styled.p`
