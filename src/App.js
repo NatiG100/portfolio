@@ -54,6 +54,8 @@ function App() {
       <ExperienceSection data={data.experience}/>
       <ProjectsSection data={data.projects}/>
       <ContactSection 
+        github={data.personalInfo.github}
+        linkedin={data.personalInfo.linkedIn}
         email={data.personalInfo.email}
         header={data.contactSection.header}
         paragraph={data.contactSection.paragraph}

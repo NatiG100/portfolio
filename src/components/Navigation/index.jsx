@@ -28,7 +28,6 @@ const Navigation = ({show=false, close=()=>{}}) => {
           smooth={true}
           exact="true"
           to="about"
-          offset={-80}
           onClick={close}
         >
           <em># </em>about
@@ -39,7 +38,6 @@ const Navigation = ({show=false, close=()=>{}}) => {
           smooth={true}
           exact="true"
           to="skills"
-          offset={-80}
           onClick={close}
         >
           <em># </em>skills
@@ -50,7 +48,6 @@ const Navigation = ({show=false, close=()=>{}}) => {
           smooth={true}
           exact="true"
           to="experience"
-          offset={-80}
           onClick={close}
         >
           <em># </em>experience
@@ -72,7 +69,6 @@ const Navigation = ({show=false, close=()=>{}}) => {
           smooth={true}
           exact="true"
           to="contact"
-          offset={-80}
           onClick={close}
         >
           <em># </em>contact
