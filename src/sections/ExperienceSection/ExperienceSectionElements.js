@@ -8,13 +8,10 @@ export const StyledExperienceSection = styled.section`
     grid-template-rows:max-content max-content 1fr ;
     grid-template-columns:1fr ;
     justify-content:center ;
-    height: 100vh;
-    min-height: 400px;
+    min-height: 100vh;
     max-width: ${theme.size.appMaxWidth};
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 `;
 
 export const StyledExperienceSectionWrapper = styled.div`
@@ -28,6 +25,8 @@ export const StyledExperienceSectionWrapper = styled.div`
     gap: 8%;
     height:max-content ;
     margin-top: 3%;
+    padding-left:15px ;
+    padding-right:15px ;
     @media ${theme.breakPoints.device.tablet}{
         flex-direction:column-reverse ;
         gap: 35px;
@@ -35,12 +34,10 @@ export const StyledExperienceSectionWrapper = styled.div`
 `;
 
 export const StyledWhereMenu = styled.div`
-    width: max-content;
+    max-width: max-content;
     max-width:100% ;
     overflow-x: auto;
     display:flex ;
-    align-items:center ;
-    justify-content:center ;
     margin-left: auto;
     margin-right:auto ;
     margin-top: 5%;
@@ -61,6 +58,7 @@ export const StyledWhereMenuItem = styled.button`
     border-radius:0 ;
     cursor: pointer;
     transition: all 200ms ease-in-out;
+    white-space:nowrap ;
     :hover{
         background-color:${theme.colors.primary}${({selected})=>(!selected&&"aa")} ;
     }

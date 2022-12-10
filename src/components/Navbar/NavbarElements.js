@@ -29,8 +29,8 @@ export const StyledNavbarWrapper = styled.div`
     align-items: center;
     width: 100%;
     svg{
-        height: 65px;
-        width: 65px;
+        height: 55px;
+        width: 55px;
         cursor: pointer;
     }
 `;

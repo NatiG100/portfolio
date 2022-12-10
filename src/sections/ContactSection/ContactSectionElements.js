@@ -2,7 +2,6 @@ import styled from "styled-components";
 import theme from "../../theme";
 
 export const StyledContactSection = styled.section`
-    padding-top: 6vh;
     width: 100%;
     display: grid;
     grid-template-rows:max-content  1fr ;
