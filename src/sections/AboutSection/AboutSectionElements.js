@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../theme';
+import {animated} from 'react-spring';
 
 export const StyledAboutSection = styled.section`
     width: 100%;
@@ -37,7 +38,7 @@ export const StyledAboutWrapper = styled.div`
         gap: 20px;
     }
 `;
-export const StyledP = styled.p`
+export const StyledP = styled(animated.p)`
     color: ${theme.colors.textDark};
     font-size: ${theme.font.lg};
     letter-spacing: 1px;

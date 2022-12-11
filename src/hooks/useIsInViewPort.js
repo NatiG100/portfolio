@@ -9,9 +9,10 @@ const useIsInviewPort = (ref)=>{
     );
 
     useEffect(()=>{
-        observer.observe(ref.current);
-
-        return ()=>observer.disconnect
+        if(ref){
+            observer.observe(ref.current);
+            return ()=>observer.disconnect
+        }
     },[ref,observer]);
 
     return isIntersecting;

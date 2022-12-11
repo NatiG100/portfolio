@@ -35,6 +35,7 @@ const HeroSection = ({data}) => {
   const animation2 = useSpring(getBaseAnimation(100));
   const animation3 = useSpring(getBaseAnimation(200));
   const animation4 = useSpring(getBaseAnimation(300));
+  const animation5 = useSpring(getBaseAnimation(350));
   const scrolltoProjects = ()=>{
     scroller.scrollTo(
       "projects",
@@ -54,7 +55,7 @@ const HeroSection = ({data}) => {
                 data.aboutYouBrief
               }
             </StyledAbout>
-            <StyledButtonWrapper>
+            <StyledButtonWrapper style={animation5}>
                 <Button size='lg' onClick={scrolltoProjects}>view projects</Button>
             </StyledButtonWrapper>
         </StyledHeroSectionWrapper>
