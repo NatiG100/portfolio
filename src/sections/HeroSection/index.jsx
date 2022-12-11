@@ -11,7 +11,30 @@ import {
     StyledAbout,
 } from './HeroSectionElements';
 
+import {useSpring, config} from 'react-spring';
+
+const getBaseAnimation = (delay)=>{
+  return (
+    {
+      to:{
+        opacity:1,
+        transform: "translateY(0px)",
+      },
+      from:{
+        opacity:0,
+        transform: "translateY(70px)",
+      },
+      config:config.gentle,
+      delay
+    }
+  );
+}
+
 const HeroSection = ({data}) => {
+  const animation = useSpring(getBaseAnimation(0));
+  const animation2 = useSpring(getBaseAnimation(100));
+  const animation3 = useSpring(getBaseAnimation(200));
+  const animation4 = useSpring(getBaseAnimation(300));
   const scrolltoProjects = ()=>{
     scroller.scrollTo(
       "projects",
@@ -23,10 +46,10 @@ const HeroSection = ({data}) => {
   return (
     <StyledHeroSection>
         <StyledHeroSectionWrapper>
-            <StyledP>Hi, my name is</StyledP>
-            <StyledH><em>{data.name}</em></StyledH>
-            <StyledH>{data.whatDoYouDo}</StyledH>
-            <StyledAbout>
+            <StyledP style={animation}>Hi, my name is</StyledP>
+            <StyledH style={animation2}><em>{data.name}</em></StyledH>
+            <StyledH style={animation3}>{data.whatDoYouDo}</StyledH>
+            <StyledAbout style={animation4}>
               {
                 data.aboutYouBrief
               }

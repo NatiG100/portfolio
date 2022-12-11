@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../theme';
+import {animated} from 'react-spring';
 
 export const StyledHeroSection = styled.section`
     margin-top: 80px;
@@ -26,7 +27,7 @@ export const StyledHeroSectionWrapper = styled.div`
     }
 `;
 
-export const StyledP = styled.p`
+export const StyledP = styled(animated.p)`
     color: ${theme.colors.primary};
     letter-spacing: 2px;
     font-size:${theme.font.anotherlg};
@@ -35,7 +36,7 @@ export const StyledP = styled.p`
         font-size: ${theme.font.lg};
     }
 `;
-export const StyledAbout = styled.p`
+export const StyledAbout = styled(animated.p)`
     color: ${theme.colors.textDark};
     font-size: ${theme.font.lg};
     font-weight: 300;
@@ -51,7 +52,7 @@ export const StyledAbout = styled.p`
     }
 `;
 
-export const StyledH = styled.h1`
+export const StyledH = styled(animated.h1)`
     text-transform: capitalize;
     color: ${theme.colors.textDark};
     font-size: ${theme.font.xxl};
@@ -69,7 +70,7 @@ export const StyledH = styled.h1`
     }
 `;
 
-export const StyledButtonWrapper = styled.div`
+export const StyledButtonWrapper = styled(animated.div)`
     margin-top: 7%;
     margin-bottom: 7%;
     width: fit-content;
