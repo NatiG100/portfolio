@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import theme from '../../theme';
+import {animated} from 'react-spring';
 
-export const StyledSkillContainer = styled.div`
+export const StyledSkillContainer = styled(animated.div)`
     display:grid;
     grid-template-columns:180px 1fr ;
     align-items: center;
