@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {FaLink, FaGithub} from 'react-icons/fa'
 import {
   StyledH1,
@@ -13,15 +13,38 @@ import {
   StyledTechStack
 } from "./ProjectCardelements"
 
+import {useSpring, config} from 'react-spring';
+import useIsInviewPort from '../../hooks/useIsInViewPort';
+import { useEffect } from 'react';
+
 const ProjectCard = ({
     link, 
     repo, 
     title,
     description,
-    techStack = []
+    techStack = [],
+    delay
 }) => {
+  const projectRef = useRef(null);
+  const isInView = useIsInviewPort(projectRef);
+  const [animation, api] = useSpring(()=>({
+    from:{
+      y:120,
+      opacity:0,
+      config:config.wobbly
+    },
+  }));
+  useEffect(()=>{
+    if(isInView){
+      api({y:0,opacity:1});
+
+      return ()=>{
+        api({y:120,opacity:0});
+      }
+    }
+  },[isInView,api])
   return (
-    <StyledProjectCard >
+    <StyledProjectCard ref={projectRef} style={animation}>
         <StyledProjectCardHeader>
             <StyledProjectCardIcon/>
             <StyledProjectCardMenu>

@@ -17,6 +17,7 @@ const Skill = ({title="Title", number="0", level=5}) => {
         from:{
             y:50,
             opacity: 0,
+            config:config.gentle
         }
     }));
 

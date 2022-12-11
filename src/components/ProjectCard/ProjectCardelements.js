@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import theme from './../../theme';
-import {VscProject} from 'react-icons/vsc'
+import {VscProject} from 'react-icons/vsc';
+import {animated} from 'react-spring';
 
-export const StyledProjectCard = styled.div`
+export const StyledProjectCard = styled(animated.div)`
     width: 100%;
     max-width: 400px;
     padding: 30px;
@@ -12,9 +13,9 @@ export const StyledProjectCard = styled.div`
     grid-template-rows: max-content 1fr;
     gap: 9%;
     height: 290px;
-    transition: all 200ms ease-in-out;
+    transition: scale 200ms ease-in-out, color 200ms ease-in-out;
     :hover{
-        transform: scale(1.05);
+        scale:1.05;
         box-shadow:0px 6px 8px #0008;
     }
     :hover .title{

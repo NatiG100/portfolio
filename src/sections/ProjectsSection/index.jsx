@@ -13,8 +13,8 @@ const ProjectsSection = ({data=[]}) => {
         <SectionTitle title="My Projects"/>
         <StyledProjectsSectionWrapper>
           {
-            data.map((project)=>(
-              <ProjectCard {...project} key={project.title}/>
+            data.map((project, index)=>(
+              <ProjectCard {...project} key={project.title} delay={index}/>
             ))
           }
         </StyledProjectsSectionWrapper>
