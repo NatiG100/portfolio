@@ -1,4 +1,4 @@
-import React, { useEffect, useInsertionEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import ImageDisplay from '../../components/ImageDisplay';
 import SectionTitle from '../../components/SectionTitle';
 import {
