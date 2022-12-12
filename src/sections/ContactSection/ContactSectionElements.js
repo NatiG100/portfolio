@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../theme";
+import {animated} from 'react-spring';
 
 export const StyledContactSection = styled.section`
     width: 100%;
@@ -23,11 +24,13 @@ export const StyledContactSectionWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    gap: 3%;
+    gap: 20px;
+    height: max-content;
+    margin-top:auto;
+    margin-bottom: auto;
 `;
 
-export const StyledH1 = styled.h1`
+export const StyledH1 = styled(animated.h1)`
     color: ${theme.colors.text};
     font-size: ${theme.font.xxl};
     letter-spacing: 1px;
@@ -37,7 +40,7 @@ export const StyledH1 = styled.h1`
         font-size:${theme.font.xml} ;
     }
 `;
-export const StyledP = styled.p`
+export const StyledP = styled(animated.p)`
     font-size: ${theme.font.lg};
     color: ${theme.colors.textDark};
     letter-spacing: 1.5px;

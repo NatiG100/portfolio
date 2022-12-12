@@ -12,6 +12,8 @@ export const StyledExperienceSection = styled.section`
     max-width: ${theme.size.appMaxWidth};
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 export const StyledExperienceSectionWrapper = styled.div`
