@@ -8,6 +8,7 @@ export const StyledSectionTitleContainer = styled.div`
     grid-template-columns: 1fr max-content 1fr;
     gap: 20px;
     align-items: center;
+    padding-top:20px;
 `;
 
 export const StyledSectionTitle = styled.h3`
