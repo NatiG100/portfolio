@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import theme from '../../theme';
+import {animated} from 'react-spring'
 
 
-export const StyledSectionTitleContainer = styled.div`
+export const StyledSectionTitleContainer = styled(animated.div)`
     width: 100%;
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
