@@ -15,6 +15,8 @@ export const StyledExperienceSection = styled.section`
     padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 6%;
+    padding-right: 6%;
 `;
 
 export const StyledExperienceSectionWrapper = styled(animated.div)`
