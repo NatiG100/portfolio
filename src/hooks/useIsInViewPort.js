@@ -9,7 +9,7 @@ const useIsInviewPort = (ref)=>{
     );
 
     useEffect(()=>{
-        if(ref){
+        if(ref!==null){
             observer.observe(ref.current);
             return ()=>observer.disconnect
         }

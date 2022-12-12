@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../theme';
 import {AiFillCaretRight as ArrowIcon} from 'react-icons/ai'
+import {animated} from 'react-spring'
 
 export const StyledExperienceSection = styled.section`
     width: 100%;
@@ -16,7 +17,7 @@ export const StyledExperienceSection = styled.section`
     margin-right: auto;
 `;
 
-export const StyledExperienceSectionWrapper = styled.div`
+export const StyledExperienceSectionWrapper = styled(animated.div)`
     width: 100%;
     max-width: ${theme.size.appMaxWidth};
     margin-left: auto;
@@ -35,7 +36,7 @@ export const StyledExperienceSectionWrapper = styled.div`
     }
 `;
 
-export const StyledWhereMenu = styled.div`
+export const StyledWhereMenu = styled(animated.div)`
     max-width: max-content;
     max-width:100% ;
     overflow-x: auto;

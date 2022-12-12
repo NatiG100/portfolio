@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useRef } from "react";
 import ImageDisplay from "../../components/ImageDisplay";
 import SectionTitle from "./../../components/SectionTitle";
 import {
@@ -16,12 +17,33 @@ import {
   StyledWhereMenuItem,
 } from "./ExperienceSectionElements";
 
+import useIsInViewPort from "../../hooks/useIsInViewPort";
+import { useSpring } from "react-spring";
+import { useEffect } from "react";
+
 const ExperienceSection = ({ data = [] }) => {
   const [selectedExperience, setSelectedExperience] = useState(data[0]);
+  const experienceRef = useRef();
+  const isInview = useIsInViewPort(experienceRef);
+  const [animation, api] = useSpring(() => ({
+    from: {
+      y: 250,
+      opacity: 0,
+    },
+  }));
+  useEffect(() => {
+    if (isInview) {
+      api({ y: 0, opacity: 1 });
+
+      return () => {
+        api({ y: 250, opacity: 0 });
+      };
+    }
+  }, [api, isInview]);
   return (
-    <StyledExperienceSection id="experience">
+    <StyledExperienceSection id="experience" ref={experienceRef}>
       <SectionTitle title="Experience" />
-      <StyledWhereMenu>
+      <StyledWhereMenu style={animation}>
         {data.map((experience) => (
           <StyledWhereMenuItem
             selected={experience.company === selectedExperience.company}
@@ -34,7 +56,7 @@ const ExperienceSection = ({ data = [] }) => {
           </StyledWhereMenuItem>
         ))}
       </StyledWhereMenu>
-      <StyledExperienceSectionWrapper>
+      <StyledExperienceSectionWrapper style={animation}>
         <StyledJobOverview>
           <StyledHeader>
             <StyledH1>
