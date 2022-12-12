@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../theme";
+import {animated} from 'react-spring'
 
 export const StyledFooter = styled.div`
     width: 100%;
@@ -14,7 +15,7 @@ export const StyledFooter = styled.div`
     padding-bottom:30px ;
 `;
 
-export const StyledFooterWrapper = styled.div`
+export const StyledFooterWrapper = styled(animated.div)`
     width: 100%;
     max-width: 400px;
     position: relative;
