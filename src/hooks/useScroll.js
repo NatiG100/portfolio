@@ -4,12 +4,15 @@ const useScroll = ({ref=null,amount=100})=>{
     const [start,setStart] = useState(false);
     const [end,setEnd] = useState(false);
     const updateSliderState=useCallback(()=>{
-        if(ref.current.scrollLeft===0){
+        if(Math.round(ref.current.scrollLeft)!==ref.current.scrollWidth-ref.current.clientWidth&&ref.current.scrollLeft===0){
             setStart(true);
             setEnd(false);
-        }else if(Math.round(ref.current.scrollLeft)===ref.current.scrollWidth-ref.current.clientWidth){
+        }else if(Math.round(ref.current.scrollLeft)===ref.current.scrollWidth-ref.current.clientWidth&&ref.current.scrollLeft!==0){
             setEnd(true);
             setStart(false);
+        }else if(Math.round(ref.current.scrollLeft)===ref.current.scrollWidth-ref.current.clientWidth&&ref.current.scrollLeft===0){
+            setEnd(true);
+            setStart(true);
         }else{
             setEnd(false);
             setStart(false);
