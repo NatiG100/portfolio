@@ -9,8 +9,10 @@ import {
   StyledProjectCardIcon,
   StyledProjectCardMenu,
   StyledProjectLink,
+  StyledStepScroller,
   StyledTech,
-  StyledTechStack
+  StyledTechStack,
+  StyledTechStackWrapper
 } from "./ProjectCardelements"
 
 import {useSpring, config} from 'react-spring';
@@ -56,9 +58,15 @@ const ProjectCard = ({
           <StyledH1 className='title'>{title}</StyledH1>
           <StyledP>{description}</StyledP>
             <StyledTechStack>
-              {techStack.map((tech)=>(
-                <StyledTech key={tech}>{tech}</StyledTech>
-                ))}
+              <StyledStepScroller position="left">{'>'}</StyledStepScroller>
+              <StyledStepScroller position="right">{'<'}</StyledStepScroller>
+              <StyledTechStackWrapper className='hide-scroll'>
+                {
+                techStack.map((tech)=>(
+                  <StyledTech key={tech}>{tech}</StyledTech>
+                  ))
+                }
+              </StyledTechStackWrapper>
             </StyledTechStack>
           </StyledProjectCardBody>
     </StyledProjectCard>

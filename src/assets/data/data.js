@@ -41,7 +41,7 @@ export const data = {
            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
            repo:"#",
            link:"#",
-            techStack:["React", "Material UI", "GrapQL"]
+            techStack:["React", "Material UI", "GrapQL","Type Script","GraphQL"]
         },
         {
             title:"A simple recepie React Applicatio",
