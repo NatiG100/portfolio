@@ -96,8 +96,6 @@ export const StyledP = styled.p`
 `;
 export const StyledTechStack = styled.div`
     width: 100%;
-    padding-left :25px ;
-    padding-right :25px ;
     position:relative;
 `;
 export const StyledTechStackWrapper = styled.div`
@@ -110,20 +108,26 @@ export const StyledTechStackWrapper = styled.div`
     gap: 8%;
     box-sizing:border-box;
     scrollbar-width:none;
+    transition:all 200ms ease-in-out ;
 `;
 export const StyledStepScroller = styled.button`
     position:absolute;
     top: 0;
     bottom:0;
     height:100% ;
-    width:25px;
+    width:40px;
     background:linear-gradient(${({position})=>(position==="left"?"to right":"to left")},${theme.colors.surface} 70%,${theme.colors.surface}22);
     ${({position})=>(position==="left"?"left:0px;":"right:0px;")};
     display:flex;
     justify-content:center ;
     align-items:center;
     border:none;
-    color:white;
+    color:#777;
+    cursor:pointer;
+    font-size:10px ;
+    :hover{
+        color:white;
+    }
 `
 export const StyledTech = styled.div`
     font-size: ${theme.font.md};

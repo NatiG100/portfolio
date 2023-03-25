@@ -19,6 +19,7 @@ import {useSpring, config} from 'react-spring';
 import useIsInviewPort from '../../hooks/useIsInViewPort';
 import { useEffect } from 'react';
 import useScroll from '../../hooks/useScroll';
+import {FaChevronLeft,FaChevronRight} from 'react-icons/fa'
 
 const ProjectCard = ({
     link, 
@@ -47,7 +48,7 @@ const ProjectCard = ({
     }
   },[isInView,api]);
   const scrollRef = useRef(null);
-  const {end,start,moveLeft,moveRight} = useScroll({ref:scrollRef,amount:50});
+  const {end,start,moveLeft,moveRight} = useScroll({ref:scrollRef,amount:45});
   return (
     <StyledProjectCard ref={projectRef} style={animation}>
         <StyledProjectCardHeader>
@@ -61,8 +62,8 @@ const ProjectCard = ({
           <StyledH1 className='title'>{title}</StyledH1>
           <StyledP>{description}</StyledP>
             <StyledTechStack>
-              {!start&&<StyledStepScroller position="left" onClick={moveRight}>{'<'}</StyledStepScroller>}
-              {!end&&<StyledStepScroller position="right" onClick={moveLeft}>{'>'}</StyledStepScroller>}
+              {!start&&<StyledStepScroller position="left" onClick={moveRight}><FaChevronLeft/></StyledStepScroller>}
+              {!end&&<StyledStepScroller position="right" onClick={moveLeft}><FaChevronRight/></StyledStepScroller>}
               <StyledTechStackWrapper className='hide-scroll' ref={scrollRef}>
                 {
                 techStack.map((tech)=>(
