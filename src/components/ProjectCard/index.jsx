@@ -18,6 +18,7 @@ import {
 import {useSpring, config} from 'react-spring';
 import useIsInviewPort from '../../hooks/useIsInViewPort';
 import { useEffect } from 'react';
+import useScroll from '../../hooks/useScroll';
 
 const ProjectCard = ({
     link, 
@@ -44,7 +45,9 @@ const ProjectCard = ({
         api({y:120,opacity:0});
       }
     }
-  },[isInView,api])
+  },[isInView,api]);
+  const scrollRef = useRef(null);
+  const {end,start,moveLeft,moveRight} = useScroll({ref:scrollRef,amount:50});
   return (
     <StyledProjectCard ref={projectRef} style={animation}>
         <StyledProjectCardHeader>
@@ -58,9 +61,9 @@ const ProjectCard = ({
           <StyledH1 className='title'>{title}</StyledH1>
           <StyledP>{description}</StyledP>
             <StyledTechStack>
-              <StyledStepScroller position="left">{'>'}</StyledStepScroller>
-              <StyledStepScroller position="right">{'<'}</StyledStepScroller>
-              <StyledTechStackWrapper className='hide-scroll'>
+              {!start&&<StyledStepScroller position="left" onClick={moveRight}>{'<'}</StyledStepScroller>}
+              {!end&&<StyledStepScroller position="right" onClick={moveLeft}>{'>'}</StyledStepScroller>}
+              <StyledTechStackWrapper className='hide-scroll' ref={scrollRef}>
                 {
                 techStack.map((tech)=>(
                   <StyledTech key={tech}>{tech}</StyledTech>
