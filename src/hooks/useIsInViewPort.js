@@ -11,7 +11,7 @@ const useIsInviewPort = (ref)=>{
     useEffect(()=>{
         if(ref!==null){
             observer.observe(ref.current);
-            return ()=>observer.disconnect
+            return observer.disconnect
         }
     },[ref,observer]);
 
