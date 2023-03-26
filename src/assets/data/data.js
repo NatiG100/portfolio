@@ -139,6 +139,26 @@ export const data = {
                     paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
                 },
             ]
+        },
+        {
+            company: "TECHAWKS2",
+            jobTitle: "React Developer",
+            date: "July - December 2015",
+            logo:techawks,
+            responsibilities:[
+                {
+                    id:1,
+                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                },
+                {
+                    id:2,
+                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                },
+                {
+                    id:3,
+                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                },
+            ]
         }
     ],
     skills:[

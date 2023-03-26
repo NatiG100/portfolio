@@ -39,7 +39,6 @@ export const StyledExperienceSectionWrapper = styled(animated.div)`
 `;
 
 export const StyledWhereMenu = styled(animated.div)`
-    max-width:max-content ;
     height:max-content;
     position:relative;
     margin-left: auto;
@@ -48,7 +47,8 @@ export const StyledWhereMenu = styled(animated.div)`
     margin-bottom:5%;
 `;
 export const StyledWhereMenuWrapper = styled(animated.div)`
-    max-width:100% ;
+    max-width:450px ;
+    width:100%;
     overflow-x: auto;
     display:flex ;
 `;
@@ -57,8 +57,8 @@ export const StyledStepScroller = styled.button`
     top: 0;
     bottom:0;
     height:100% ;
-    width:40px;
-    background:linear-gradient(${({position})=>(position==="left"?"to right":"to left")},#0B0C10 70%,#0B0C1022);
+    width:50px;
+    background:linear-gradient(${({position})=>(position==="left"?"to right":"to left")},#0B0C10 70%,#0B0C1000);
     ${({position})=>(position==="left"?"left:0px;":"right:0px;")};
     display:flex;
     justify-content:center ;
