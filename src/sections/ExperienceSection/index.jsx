@@ -15,11 +15,14 @@ import {
   StyledWhereMenu,
   StyledExperienceSectionWrapper,
   StyledWhereMenuItem,
+  StyledStepScroller,
+  StyledWhereMenuWrapper,
 } from "./ExperienceSectionElements";
 
 import useIsInViewPort from "../../hooks/useIsInViewPort";
 import { useSpring } from "react-spring";
 import { useEffect } from "react";
+import {FaChevronLeft,FaChevronCircleRight, FaChevronRight} from 'react-icons/fa'
 
 const ExperienceSection = ({ data = [] }) => {
   const [selectedExperience, setSelectedExperience] = useState(data[0]);
@@ -44,17 +47,21 @@ const ExperienceSection = ({ data = [] }) => {
     <StyledExperienceSection id="experience" ref={experienceRef}>
       <SectionTitle title="Experience" />
       <StyledWhereMenu style={animation}>
-        {data.map((experience) => (
-          <StyledWhereMenuItem
-            selected={experience.company === selectedExperience.company}
-            onClick={() => {
-              setSelectedExperience(experience);
-            }}
-            key={experience.company}
-          >
-            {experience.company}
-          </StyledWhereMenuItem>
-        ))}
+        <StyledStepScroller position="left"><FaChevronLeft/></StyledStepScroller>
+        <StyledStepScroller position="right"><FaChevronRight/></StyledStepScroller>
+        <StyledWhereMenuWrapper>
+          {data.map((experience) => (
+            <StyledWhereMenuItem
+              selected={experience.company === selectedExperience.company}
+              onClick={() => {
+                setSelectedExperience(experience);
+              }}
+              key={experience.company}
+            >
+              {experience.company}
+            </StyledWhereMenuItem>
+          ))}
+        </StyledWhereMenuWrapper>
       </StyledWhereMenu>
       <StyledExperienceSectionWrapper style={animation}>
         <StyledJobOverview>

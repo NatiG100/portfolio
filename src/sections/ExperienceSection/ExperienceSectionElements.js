@@ -39,15 +39,38 @@ export const StyledExperienceSectionWrapper = styled(animated.div)`
 `;
 
 export const StyledWhereMenu = styled(animated.div)`
-    max-width: max-content;
+    max-width:max-content ;
+    height:max-content;
+    position:relative;
+    margin-left: auto;
+    margin-right:auto ;
+    margin-top:5%;
+    margin-bottom:5%;
+`;
+export const StyledWhereMenuWrapper = styled(animated.div)`
     max-width:100% ;
     overflow-x: auto;
     display:flex ;
-    margin-left: auto;
-    margin-right:auto ;
-    margin-top: 5%;
-    margin-bottom: 5%;
 `;
+export const StyledStepScroller = styled.button`
+    position:absolute;
+    top: 0;
+    bottom:0;
+    height:100% ;
+    width:40px;
+    background:linear-gradient(${({position})=>(position==="left"?"to right":"to left")},#0B0C10 70%,#0B0C1022);
+    ${({position})=>(position==="left"?"left:0px;":"right:0px;")};
+    display:flex;
+    justify-content:center ;
+    align-items:center;
+    border:none;
+    color:#777;
+    cursor:pointer;
+    font-size:12px ;
+    :hover{
+        color:white;
+    }
+`
 export const StyledWhereMenuItem = styled.button`
     outline: none;
     background-color:${theme.colors.primary}${({selected})=>(!selected&&"77")} ;
