@@ -89,7 +89,7 @@ export const data = {
         {
             company: "INSA",
             jobTitle: "System Developer",
-            date: "July - December 2015",
+            date: "August 2022 - Present",
             logo:insa,
             responsibilities:[
                 {
@@ -109,7 +109,7 @@ export const data = {
         {
             company: "2F CAPITAL",
             jobTitle: "Frontend Developer",
-            date: "July - December 2015",
+            date: "April 2022 - August 2022",
             logo:twoF,
             responsibilities:[
                 {
@@ -129,7 +129,7 @@ export const data = {
         {
             company: "TECHAWKS",
             jobTitle: "React Developer",
-            date: "July - December 2015",
+            date: "January 2022 - April 2022",
             logo:techawks,
             responsibilities:[
                 {
