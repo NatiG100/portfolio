@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import {FaLink, FaGithub} from 'react-icons/fa'
+import React, { useRef } from "react";
+import { FaLink, FaGithub } from "react-icons/fa";
 import {
   StyledH1,
   StyledP,
@@ -12,69 +12,86 @@ import {
   StyledStepScroller,
   StyledTech,
   StyledTechStack,
-  StyledTechStackWrapper
-} from "./ProjectCardelements"
+  StyledTechStackWrapper,
+} from "./ProjectCardelements";
 
-import {useSpring, config} from 'react-spring';
-import useIsInviewPort from '../../hooks/useIsInViewPort';
-import { useEffect } from 'react';
-import useScroll from '../../hooks/useScroll';
-import {FaChevronLeft,FaChevronRight} from 'react-icons/fa'
+import { useSpring, config } from "react-spring";
+import useIsInviewPort from "../../hooks/useIsInViewPort";
+import { useEffect } from "react";
+import useScroll from "../../hooks/useScroll";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ProjectCard = ({
-    link, 
-    repo, 
-    title,
-    description,
-    techStack = [],
-    delay
+  link,
+  repo,
+  title,
+  description,
+  techStack = [],
+  delay,
 }) => {
   const projectRef = useRef(null);
   const isInView = useIsInviewPort(projectRef);
-  const [animation, api] = useSpring(()=>({
-    from:{
-      y:120,
-      opacity:0,
-      config:config.wobbly
+  const [animation, api] = useSpring(() => ({
+    from: {
+      y: 120,
+      opacity: 0,
+      config: config.wobbly,
     },
   }));
-  useEffect(()=>{
-    if(isInView){
-      api({y:0,opacity:1});
+  useEffect(() => {
+    if (isInView) {
+      api({ y: 0, opacity: 1 });
 
-      return ()=>{
-        api({y:120,opacity:0});
-      }
+      return () => {
+        api({ y: 120, opacity: 0 });
+      };
     }
-  },[isInView,api]);
+  }, [isInView, api]);
   const scrollRef = useRef(null);
-  const {end,start,moveLeft,moveRight} = useScroll({ref:scrollRef,amount:45});
+  const { end, start, moveLeft, moveRight } = useScroll({
+    ref: scrollRef,
+    amount: 45,
+  });
   return (
     <StyledProjectCard ref={projectRef} style={animation}>
-        <StyledProjectCardHeader>
-            <StyledProjectCardIcon/>
-            <StyledProjectCardMenu>
-                {link&&<StyledProjectLink href={link}><FaLink/></StyledProjectLink>}
-                {repo&&<StyledProjectLink href={repo}><FaGithub/></StyledProjectLink>}
-            </StyledProjectCardMenu>
-        </StyledProjectCardHeader>
-        <StyledProjectCardBody>
-          <StyledH1 className='title'>{title}</StyledH1>
-          <StyledP>{description}</StyledP>
-            <StyledTechStack>
-              {!start&&<StyledStepScroller position="left" onClick={moveRight}><FaChevronLeft/></StyledStepScroller>}
-              {!end&&<StyledStepScroller position="right" onClick={moveLeft}><FaChevronRight/></StyledStepScroller>}
-              <StyledTechStackWrapper className='hide-scroll' ref={scrollRef}>
-                {
-                techStack.map((tech)=>(
-                  <StyledTech key={tech}>{tech}</StyledTech>
-                  ))
-                }
-              </StyledTechStackWrapper>
-            </StyledTechStack>
-          </StyledProjectCardBody>
+      <StyledProjectCardHeader>
+        <StyledProjectCardIcon />
+        <StyledProjectCardMenu>
+          {link && (
+            <StyledProjectLink href={link} target="_blank">
+              <FaLink />
+            </StyledProjectLink>
+          )}
+          {repo && (
+            <StyledProjectLink href={repo} target="_blank">
+              <FaGithub />
+            </StyledProjectLink>
+          )}
+        </StyledProjectCardMenu>
+      </StyledProjectCardHeader>
+      <StyledProjectCardBody>
+        <StyledH1 className="title">{title}</StyledH1>
+        <StyledP>{description}</StyledP>
+        <StyledTechStack>
+          {!start && (
+            <StyledStepScroller position="left" onClick={moveRight}>
+              <FaChevronLeft />
+            </StyledStepScroller>
+          )}
+          {!end && (
+            <StyledStepScroller position="right" onClick={moveLeft}>
+              <FaChevronRight />
+            </StyledStepScroller>
+          )}
+          <StyledTechStackWrapper className="hide-scroll" ref={scrollRef}>
+            {techStack.map((tech) => (
+              <StyledTech key={tech}>{tech}</StyledTech>
+            ))}
+          </StyledTechStackWrapper>
+        </StyledTechStack>
+      </StyledProjectCardBody>
     </StyledProjectCard>
-  )
-}
+  );
+};
 
 export default ProjectCard;

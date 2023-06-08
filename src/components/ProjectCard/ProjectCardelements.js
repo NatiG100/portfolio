@@ -4,10 +4,8 @@ import {VscProject} from 'react-icons/vsc';
 import {animated} from 'react-spring';
 
 export const StyledProjectCard = styled(animated.div)`
-    box-sizing:border-box;
 
     width: 100%;
-    max-width: 400px;
     padding: 30px;
     border-radius: 8px;
     background-color: ${theme.colors.surface};
@@ -64,6 +62,7 @@ export const StyledProjectCardBody = styled.div`
     height: 100%;
     align-items: flex-start;
     box-sizing:border-box;
+    width: 100%;
 `;
 
 export const StyledH1 = styled.h1`
@@ -97,16 +96,15 @@ export const StyledP = styled.p`
 export const StyledTechStack = styled.div`
     width: 100%;
     position:relative;
+    display:grid;
 `;
 export const StyledTechStackWrapper = styled.div`
-    width:100%;
     overflow-y: auto;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 8%;
-    box-sizing:border-box;
     scrollbar-width:none;
     transition:all 200ms ease-in-out ;
 `;

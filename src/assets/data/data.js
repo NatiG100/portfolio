@@ -12,14 +12,14 @@ export const data = {
         whatDoYouDo:"I Build Web Application",
         aboutYouBrief:
             <>
-                    React Developer with hands-on experience in identifying web-based 
+                    <em>React </em> and <em>Node.js Developer</em> with hands-on experience in identifying web-based 
                     user interactions along with designing & implementing highly-responsive 
                     user interface components by deploying <em>React concepts</em>.
             </>,
         about:
             <>
                 Hello! My name is Natnael and I enjoy building web
-                 applications. I am <em>React Developer</em> with hands-on 
+                 applications. I am <em>React </em> and <em>Node.js Developer</em> with hands-on 
                  experience in identifying web-based user interactions 
                  alongwith designing & implementing <em>highly responsive</em> user 
                  interface components by deploying React concepts. <br/><br/>
@@ -33,50 +33,56 @@ export const data = {
     },
     contactSection:{
         header: "Get in Touch",
-        paragraph: "I'm currently looking for new opportunities in React web development",
+        paragraph: "I'm currently looking for new opportunities in React and Node.js web development",
     },
     projects:[
         {
-           title:"A simple recepie React Application",
-           description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
-           repo:"#",
-           link:"#",
-            techStack:["React", "Material UI", "GrapQL","Type Script","GraphQL"]
+           title:"Restaurant Menu App",
+           description:"This is a fully functional restaurant menu application with an easy to use admin dashboard",
+           repo:"https://github.com/NatiG100/restaurant-app",
+           link:"https://restaurant-c9640hulp-natig100.vercel.app",
+            techStack:["React", "tailwind.css", "Axios","Type Script","React Query","Node.js","Express","Mongodb"]
         },
         {
-            title:"A simple recepie React Applicatio",
-            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
-            repo:"#",
-            link:"#",
-             techStack:["React", "Material UI", "GrapQL"]
+            title:"Portfolio webpage",
+            description:"Fully responsive and very good looking portfolio site",
+            repo:"https://github.com/NatiG100/portfolio",
+             techStack:["React", "Styled-component", "React-Scrole", "React-Spring"]
+         },
+        {
+            title:"Book Sharing Website",
+            description:"This is a web application to share books online. It include a robust search functionality and content manager.",
+            repo:"https://github.com/NatiG100/book-sharing-app-front",
+            link:"https://book-sharing-app-front.vercel.app",
+             techStack:["Next.js(app router)", "tailwind.css", "Meilisearch","Strapi"]
          },
          {
-            title:"A simple recepie React Applicati",
-            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
-            repo:"#",
-            link:"#",
-             techStack:["React", "Material UI", "GrapQL"]
+            title:"Hulu landing page clone",
+            description:"Pixel perfect clone of the Hulu landing page (not responsive)",
+            repo:"https://github.com/NatiG100/hulu-landing-page-clone",
+            link:"https://hulu-landing-page-clone-six.vercel.app",
+             techStack:["React", "Styled component", "next.js"]
          },
          {
-            title:"A simple recepie React Applicat",
-            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
-            repo:"#",
-            link:"#",
-             techStack:["React", "Material UI", "GrapQL"]
+            title:"Youtube clone",
+            description:"A UI clone of the most famous video sharing platform, YouTube. (Not completed)",
+            repo:"https://github.com/NatiG100/youtube-clone",
+            link:"https://youtube-clone-delta-smoky.vercel.app",
+            techStack:["Next.js", "MaterialUI"]
          },
          {
-            title:"A simple recepie React Applica",
-            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
-            repo:"#",
-            link:"#",
-             techStack:["React", "Material UI", "GrapQL"]
+            title:"Landing page",
+            description:"A fully responsive sample landing page with a very attractive UI.",
+            repo:"https://github.com/NatiG100/react-website-smooth-scroll",
+            link:"https://react-website-smooth-scroll-beta.vercel.app",
+            techStack:["React", "Styled-component", "React-Scrole"],
          },
          {
-            title:"A simple recepie React Applic",
-            description:"This is my first react application. You can create a new user and post recepies. You can also view other people’s recipie",
-            repo:"#",
-            link:"#",
-             techStack:["React", "Material UI", "GrapQL"]
+            title:"Rick and Morty",
+            description:"This is a test project which helped me to get my first job as a web developer.",
+            repo:"https://github.com/NatiG100/rick-and-morty",
+            link:"https://rick-and-morty-28i917p9k-natig100.vercel.app",
+             techStack:["Next.js", "Styled-component", "GrapQL"]
          },
     ],
     experience:[
@@ -92,11 +98,11 @@ export const data = {
                 },
                 {
                     id:2,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Creating and testing applications for websites."
                 },
                 {
                     id:3,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Working with graphics and other designers."
                 },
             ]
         },
@@ -108,15 +114,15 @@ export const data = {
             responsibilities:[
                 {
                     id:1,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Developing new user-facing features using React.js."
                 },
                 {
                     id:2,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Translating designs and wireframes into high quality code."
                 },
                 {
                     id:3,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Integrate front end with REST api services."
                 },
             ]
         },
@@ -128,38 +134,18 @@ export const data = {
             responsibilities:[
                 {
                     id:1,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Developing new user-facing features using Next.js."
                 },
                 {
                     id:2,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Translating designs and wireframes into high quality code."
                 },
                 {
                     id:3,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
+                    paragraph:"Integrate front end with GraphQL api services."
                 },
             ]
         },
-        {
-            company: "TECHAWKS2",
-            jobTitle: "React Developer",
-            date: "July - December 2015",
-            logo:techawks,
-            responsibilities:[
-                {
-                    id:1,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
-                },
-                {
-                    id:2,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
-                },
-                {
-                    id:3,
-                    paragraph:"Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications."
-                },
-            ]
-        }
     ],
     skills:[
         {
@@ -184,27 +170,47 @@ export const data = {
         },
         {
             id: 5,
-            title: "Node.js",
+            title: "Strapi CMS",
             level: 4,
         },
         {
             id: 6,
-            title: "Express.js",
+            title: "Node.js",
             level: 4,
         },
         {
             id: 7,
-            title: "GraphQL",
+            title: "Express.js",
             level: 4,
         },
         {
             id: 8,
-            title: "MongoDb",
+            title: "Nest.js",
             level: 4,
         },
         {
             id: 9,
+            title: "Prisma.js",
+            level: 3,
+        },
+        {
+            id: 10,
+            title: "GraphQL",
+            level: 4,
+        },
+        {
+            id: 11,
+            title: "MongoDb",
+            level: 4,
+        },
+        {
+            id: 12,
             title: "MySQL",
+            level: 4,
+        },
+        {
+            id: 13,
+            title: "Postgresql",
             level: 3,
         }
     ]
