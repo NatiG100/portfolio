@@ -37,6 +37,18 @@ export const data = {
     },
     projects:[
         {
+           title:"Tibeb inprint",
+           description:"A website which I contributed as a fullstack developer",
+           link:"https://www.http://tibebinprint.com/",
+            techStack:["AWS","React", "tailwind.css", "Apollo Client","Type Script","GraphQl","Node.js","Nest.js","Prisma","PostgreSQL]
+        },
+        {
+           title:"Chat App",
+           description:"A chat application which I am building to expand my skill areas.",
+           repo:"https://github.com/NatiG100/restaurant-app",
+            techStack:["React", "tailwind.css", "Axios","Type Script","React Query","Node.js","Nest.js","Prisma","PostgreSQL"]
+        },
+        {
            title:"Restaurant Menu App",
            description:"This is a fully functional restaurant menu application with an easy to use admin dashboard",
            repo:"https://github.com/NatiG100/restaurant-app",
