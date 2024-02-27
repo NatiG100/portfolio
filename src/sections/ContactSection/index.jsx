@@ -62,6 +62,7 @@ const ContactSection = ({
       <StyledContactSectionWrapper ref={contactRef}>
         <StyledH1 style={animation1}>{header}</StyledH1>
         <StyledP style={animation2}>{paragraph}</StyledP>
+        <StyledP style={animation2}>Tel: +2519-8811-9244</StyledP>
         <Links mail={email} github={github} linkedIn={linkedin} />
         <animated.div
           style={{
