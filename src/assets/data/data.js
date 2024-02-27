@@ -40,7 +40,7 @@ export const data = {
            title:"Tibeb inprint",
            description:"A website which I contributed as a fullstack developer",
            link:"https://www.http://tibebinprint.com/",
-            techStack:["AWS","React", "tailwind.css", "Apollo Client","Type Script","GraphQl","Node.js","Nest.js","Prisma","PostgreSQL]
+            techStack:["AWS","React", "tailwind.css", "Apollo Client","Type Script","GraphQl","Node.js","Nest.js","Prisma","PostgreSQL"]
         },
         {
            title:"Chat App",
