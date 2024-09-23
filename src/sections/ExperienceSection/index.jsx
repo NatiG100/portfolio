@@ -22,7 +22,11 @@ import {
 import useIsInViewPort from "../../hooks/useIsInViewPort";
 import { useSpring } from "react-spring";
 import { useEffect } from "react";
-import {FaChevronLeft,FaChevronCircleRight, FaChevronRight} from 'react-icons/fa'
+import {
+  FaChevronLeft,
+  FaChevronCircleRight,
+  FaChevronRight,
+} from "react-icons/fa";
 import useScroll from "../../hooks/useScroll";
 
 const ExperienceSection = ({ data = [] }) => {
@@ -44,14 +48,25 @@ const ExperienceSection = ({ data = [] }) => {
       };
     }
   }, [api, isInview]);
-  const menuListRef= useRef(null);
-  const {end,start,moveLeft,moveRight} = useScroll({ref:menuListRef,amount:800});
+  const menuListRef = useRef(null);
+  const { end, start, moveLeft, moveRight } = useScroll({
+    ref: menuListRef,
+    amount: 800,
+  });
   return (
     <StyledExperienceSection id="experience" ref={experienceRef}>
       <SectionTitle title="Experience" />
       <StyledWhereMenu style={animation}>
-        {!start&&<StyledStepScroller position="left" onClick={moveRight}><FaChevronLeft/></StyledStepScroller>}
-        {!end&&<StyledStepScroller position="right" onClick={moveLeft}><FaChevronRight/></StyledStepScroller>}
+        {!start && (
+          <StyledStepScroller position="left" onClick={moveRight}>
+            <FaChevronLeft />
+          </StyledStepScroller>
+        )}
+        {!end && (
+          <StyledStepScroller position="right" onClick={moveLeft}>
+            <FaChevronRight />
+          </StyledStepScroller>
+        )}
         <StyledWhereMenuWrapper ref={menuListRef} className="hide-scroll">
           {data.map((experience) => (
             <StyledWhereMenuItem
