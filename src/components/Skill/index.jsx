@@ -1,48 +1,40 @@
-import React, { useRef } from 'react';
+// Skill.js
+import React from "react";
+import PropTypes from "prop-types";
 import {
-    StyledSkillContainer,
-    StyledSkillLevel,
-    StyledSkillLevelWrapper,
-    StyledSkillTitle,
-} from './SkillElements';
+  SkillContainer,
+  SkillCard,
+  SkillIcon,
+  SkillLabel,
+} from "./SkillStyles";
+import theme from "../../theme";
 
-import {useSpring, config} from 'react-spring';
-import useIsInviewPort from '../../hooks/useIsInViewPort';
-import { useEffect } from 'react';
+const Skill = ({ icon, label, bgColor, hoverColor, hoverEffect }) => {
+  return (
+    <SkillCard
+      bgColor={bgColor}
+      hoverColor={hoverColor}
+      hoverEffect={hoverEffect}
+    >
+      <SkillIcon src={icon} alt={`${label} Icon`} />
+      <SkillLabel>{label}</SkillLabel>
+    </SkillCard>
+  );
+};
 
-const Skill = ({title="Title", number="0", level=5}) => {
-    const skillRef = useRef(null);
-    const isIntersecting = useIsInviewPort(skillRef);
-    const [animation,api] = useSpring(()=>({
-        from:{
-            y:50,
-            opacity: 0,
-            config:config.gentle
-        }
-    }));
+// Define the prop types for the component
+Skill.propTypes = {
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  bgColor: PropTypes.string,
+  hoverColor: PropTypes.string,
+  hoverEffect: PropTypes.bool,
+};
 
-    useEffect(()=>{
-        if(isIntersecting){
-            api({
-                y:0,
-                opacity:1,
-            });
-        }
-        return ()=>{
-            api({
-                y:50,
-                opacity:0,
-            });
-        }
-    },[isIntersecting, api])
-    return (
-      <StyledSkillContainer ref={skillRef} style={animation}>
-          <StyledSkillTitle><em>#{number}</em> {title}</StyledSkillTitle>
-          <StyledSkillLevelWrapper>
-              <StyledSkillLevel level={level}/>
-          </StyledSkillLevelWrapper>
-      </StyledSkillContainer>
-  )
-}
+Skill.defaultProps = {
+  bgColor: "#FFFFFF", // Default background color (e.g., Ubuntu orange)
+  hoverColor: theme.colors.primary, // Default hover color (e.g., Flutter blue)
+  hoverEffect: true, // Enables the scale effect by default
+};
 
 export default Skill;
