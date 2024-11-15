@@ -18,6 +18,15 @@ export const StyledExperienceSection = styled.section`
   padding-left: 6%;
   padding-right: 6%;
 `;
+export const StyledExperienceTimelineWrapper = styled.div`
+  width: 100%;
+  max-width: 800px;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 export const StyledExperienceSectionWrapper = styled(animated.div)`
   width: 100%;

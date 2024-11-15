@@ -35,5 +35,5 @@ export const SkillIcon = styled.img`
 
 export const SkillLabel = styled.div`
   font-size: 16px;
-  color: black;
+  color: white;
 `;

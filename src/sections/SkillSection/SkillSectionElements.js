@@ -22,6 +22,7 @@ export const StyledSkillList = styled.div`
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;

@@ -147,169 +147,49 @@ export const data = {
       jobTitle: "Full Stack Developer",
       date: "May 2024 - Present",
       logo: plastream,
-      responsibilities: [
-        {
-          id: 1,
-          paragraph:
-            "Design, build, and maintain efficient code using modern web technologies.",
-        },
-        {
-          id: 2,
-          paragraph:
-            "Create responsive user interfaces with frameworks like React and Flutter.",
-        },
-        {
-          id: 3,
-          paragraph:
-            "Develop server-side logic and manage databases using Node.js.",
-        },
-        {
-          id: 4,
-          paragraph:
-            "Integrate APIs for seamless communication between services.",
-        },
-        {
-          id: 5,
-          paragraph:
-            "Utilize version control systems like Git for collaboration and project management.",
-        },
-        {
-          id: 6,
-          paragraph:
-            "Set up CI/CD pipelines to automate build, test, and deployment processes.",
-        },
-        {
-          id: 7,
-          paragraph:
-            "Manage cloud infrastructure to ensure scalable and reliable applications.",
-        },
-        {
-          id: 8,
-          paragraph:
-            "Develop RESTful APIs and GraphQL endpoints for data communication.",
-        },
-        {
-          id: 9,
-          paragraph:
-            "Mentor junior developers to foster team growth and skill development.",
-        },
-      ],
+      description: `Design and build scalable web applications using modern technologies like React, 
+Flutter, and Node.js. Create responsive interfaces, manage databases, integrate APIs, 
+and automate workflows with CI/CD pipelines. Utilize Git for collaboration, manage 
+cloud infrastructure, and develop RESTful APIs while mentoring junior 
+developers to foster growth.`,
     },
     {
       company: "Ibex",
       jobTitle: "Full Stack Developer",
       date: "April 2024 - May 2024",
       logo: ibex,
-      responsibilities: [
-        {
-          id: 1,
-          paragraph: "Develop high-quality software design and architecture.",
-        },
-        {
-          id: 2,
-          paragraph: "Prioritize and execute development tasks efficiently.",
-        },
-        {
-          id: 3,
-          paragraph: "Produce clean, efficient, and maintainable code.",
-        },
-        {
-          id: 4,
-          paragraph:
-            "Automate repetitive tasks using appropriate tools and scripting.",
-        },
-        {
-          id: 5,
-          paragraph:
-            "Review and debug code to ensure accuracy and performance.",
-        },
-        {
-          id: 6,
-          paragraph:
-            "Perform validation testing to guarantee functionality and quality.",
-        },
-        {
-          id: 7,
-          paragraph:
-            "Collaborate with cross-functional teams to fix issues and enhance software.",
-        },
-        {
-          id: 8,
-          paragraph: "Document the phases of software development clearly.",
-        },
-        {
-          id: 9,
-          paragraph: "Monitor system performance and stability regularly.",
-        },
-        {
-          id: 10,
-          paragraph:
-            "Ensure the software remains current with the latest technologies and trends.",
-        },
-      ],
+      description: `Design and architect high-quality software, prioritize development tasks, and write 
+clean, maintainable code. Use automation for repetitive tasks and conduct thorough 
+testing to ensure functionality and performance. Collaborate with cross-functional 
+teams, document development phases clearly, monitor system stability, and keep the 
+software updated with the latest technologies and trends.`,
     },
     {
       company: "INSA",
       jobTitle: "System Developer",
       date: "August 2022 - April 2024",
       logo: insa,
-      responsibilities: [
-        {
-          id: 1,
-          paragraph:
-            "Follow Microservice Architecture in order to implement highly reusable and high performance web and mobile applications.",
-        },
-        {
-          id: 2,
-          paragraph: "Creating and testing applications for websites.",
-        },
-        {
-          id: 3,
-          paragraph: "Working with graphics and other designers.",
-        },
-      ],
+      description: `Follow Microservice Architecture to build highly reusable, high-performance web and 
+mobile applications. Create and test applications for websites while collaborating with 
+graphic designers and other creatives.`,
     },
     {
       company: "2F CAPITAL",
       jobTitle: "Frontend Developer",
       date: "April 2022 - August 2022",
       logo: twoF,
-      responsibilities: [
-        {
-          id: 1,
-          paragraph: "Developing new user-facing features using React.js.",
-        },
-        {
-          id: 2,
-          paragraph:
-            "Translating designs and wireframes into high quality code.",
-        },
-        {
-          id: 3,
-          paragraph: "Integrate front end with REST api services.",
-        },
-      ],
+      description: `Follow Microservice Architecture to build highly reusable, high-performance web and 
+mobile applications. Create and test applications for websites while collaborating with 
+graphic designers and other creatives.`,
     },
     {
       company: "TECHAWKS",
       jobTitle: "React Developer",
       date: "January 2022 - April 2022",
       logo: techawks,
-      responsibilities: [
-        {
-          id: 1,
-          paragraph: "Developing new user-facing features using Next.js.",
-        },
-        {
-          id: 2,
-          paragraph:
-            "Translating designs and wireframes into high quality code.",
-        },
-        {
-          id: 3,
-          paragraph: "Integrate front end with GraphQL api services.",
-        },
-      ],
+      description: `Follow Microservice Architecture to build highly reusable, high-performance web and 
+mobile applications. Create and test applications for websites while collaborating with 
+graphic designers and other creatives.`,
     },
   ],
   skills: [
