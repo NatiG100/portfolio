@@ -15,45 +15,17 @@ import {
   StyledTechStackWrapper,
 } from "./ProjectCardelements";
 
-import { useSpring, config } from "react-spring";
-import useIsInviewPort from "../../hooks/useIsInViewPort";
-import { useEffect } from "react";
 import useScroll from "../../hooks/useScroll";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const ProjectCard = ({
-  link,
-  repo,
-  title,
-  description,
-  techStack = [],
-  delay,
-}) => {
-  const projectRef = useRef(null);
-  const isInView = useIsInviewPort(projectRef);
-  const [animation, api] = useSpring(() => ({
-    from: {
-      y: 120,
-      opacity: 0,
-      config: config.wobbly,
-    },
-  }));
-  useEffect(() => {
-    if (isInView) {
-      api({ y: 0, opacity: 1 });
-
-      return () => {
-        api({ y: 120, opacity: 0 });
-      };
-    }
-  }, [isInView, api]);
+const ProjectCard = ({ link, repo, title, description, techStack = [] }) => {
   const scrollRef = useRef(null);
   const { end, start, moveLeft, moveRight } = useScroll({
     ref: scrollRef,
     amount: 45,
   });
   return (
-    <StyledProjectCard ref={projectRef} style={animation}>
+    <StyledProjectCard>
       <StyledProjectCardHeader>
         <StyledProjectCardIcon />
         <StyledProjectCardMenu>

@@ -8,7 +8,7 @@ export const StyledTimelineAdapterHeader = styled.p`
 `;
 
 export const StyledTImelineAdapterCard = styled.div`
-  border: #353434;
+  border: 1px solid #303034;
   background-color: ${theme.colors.surface};
   margin-top: 20px;
   padding: 20px;

@@ -1,4 +1,4 @@
-import logo from "./../img/profile.jpg";
+// import logo from "./../img/profile.jpg";
 import insa from "./../img/insa.png";
 import techawks from "./../img/techawks.jpg";
 import plastream from "./../img/playstream.png";
@@ -178,18 +178,20 @@ graphic designers and other creatives.`,
       jobTitle: "Frontend Developer",
       date: "April 2022 - August 2022",
       logo: twoF,
-      description: `Follow Microservice Architecture to build highly reusable, high-performance web and 
-mobile applications. Create and test applications for websites while collaborating with 
-graphic designers and other creatives.`,
+      description: `Responsible for developing and implementing user-facing features using 
+        React.js, ensuring designs and wireframes are accurately translated into high-quality, 
+        maintainable code. Tasked with integrating front-end components with REST API services 
+        to deliver seamless and responsive web applications.`,
     },
     {
       company: "TECHAWKS",
       jobTitle: "React Developer",
       date: "January 2022 - April 2022",
       logo: techawks,
-      description: `Follow Microservice Architecture to build highly reusable, high-performance web and 
-mobile applications. Create and test applications for websites while collaborating with 
-graphic designers and other creatives.`,
+      description: `Responsible for building and implementing user-facing features 
+      using Next.js, transforming designs and wireframes into high-quality, 
+      efficient code. Tasked with integrating front-end components with GraphQL 
+      API services to ensure seamless and dynamic application performance.`,
     },
   ],
   skills: [
