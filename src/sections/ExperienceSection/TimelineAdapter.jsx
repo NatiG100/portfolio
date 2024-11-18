@@ -3,10 +3,10 @@ import ImageDisplay from "../../components/ImageDisplay";
 import { StyledFlex } from "../../components/Layout/StyledLayouts";
 import { StyledTimelineHeader } from "../../components/timeline/TimelineItemElements";
 import {
+  HiddenOnTablet,
   StyledTImelineAdapterCard,
   StyledTimelineAdapterCardParagraph,
   StyledTimelineAdapterCardTitle,
-  StyledTimelineAdapterHeader,
   StyledTimelineAdapterTime,
 } from "./TimelineAdapter.elements";
 
@@ -28,7 +28,9 @@ const timelineProps = data.experience.map((experienceItem) => ({
           </StyledTimelineAdapterCardParagraph>
         </div>
 
-        <ImageDisplay img={experienceItem.logo} dimension="120px" />
+        <HiddenOnTablet>
+          <ImageDisplay img={experienceItem.logo} dimension="120px" />
+        </HiddenOnTablet>
       </StyledFlex>
     </StyledTImelineAdapterCard>
   ),

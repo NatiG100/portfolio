@@ -27,3 +27,11 @@ export const StyledTimelineAdapterCardTitle = styled.div`
 export const StyledTimelineAdapterTime = styled.p`
   color: ${theme.colors.textDark};
 `;
+
+export const HiddenOnTablet = styled.span`
+  display: inline-block;
+
+  @media (${theme.breakPoints.device.tablet}) {
+    display: none;
+  }
+`;
