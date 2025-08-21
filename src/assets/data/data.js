@@ -39,22 +39,60 @@ export const data = {
   },
   projects: [
     {
-      title: "Tibeb inprint",
-      description: "A website which I contributed as a fullstack developer",
-      link: "https://www.http://tibebinprint.com/",
+      title: "Remytel",
+      description:
+        "A modern corporate website for Remytel, where I contributed as a Next.js developer, implementing responsive UI and integrating dynamic features for an enhanced user experience.",
+      link: "https://www.remytel.com/",
       techStack: [
-        "AWS",
         "React",
-        "tailwind.css",
-        "Apollo Client",
-        "Type Script",
-        "GraphQl",
-        "Node.js",
-        "Nest.js",
-        "Prisma",
-        "PostgreSQL",
+        "Next.js",
+        "Tailwind CSS",
+        "RTK Query",
+        "TypeScript",
       ],
     },
+    {
+      title: "Remytel Admin",
+      description:
+        "An admin dashboard for Remytel, where I developed interactive interfaces using Next.js, managed state with RTK Query, and implemented scalable components for efficient workflow management.",
+      techStack: [
+        "React",
+        "Shadcn",
+        "Next.js",
+        "Tailwind CSS",
+        "RTK Query",
+        "TypeScript",
+      ],
+    },
+    {
+      title: "Solaris",
+      description:
+        "A sleek landing page for Solaris Motors, built with React and Next.js, showcasing products and features with a clean, responsive design and smooth user interactions.",
+      link: "https://www.solarismotors.co/",
+      techStack: [
+        "React",
+        "Shadcn",
+        "Next.js",
+        "Tailwind CSS",
+        "RTK Query",
+        "TypeScript",
+      ],
+    },
+    {
+      title: "Super-A",
+      description:
+        "A dynamic landing page for Super-A, developed with React and Next.js, featuring a responsive design, interactive elements, and a polished user experience.",
+      link: "https://www.remytel.com/",
+      techStack: [
+        "React",
+        "Shadcn",
+        "Next.js",
+        "Tailwind CSS",
+        "RTK Query",
+        "TypeScript",
+      ],
+    },
+
     {
       title: "Chat App",
       description:
@@ -124,22 +162,22 @@ export const data = {
       link: "https://youtube-clone-delta-smoky.vercel.app",
       techStack: ["Next.js", "MaterialUI"],
     },
-    {
-      title: "Landing page",
-      description:
-        "A fully responsive sample landing page with a very attractive UI.",
-      repo: "https://github.com/NatiG100/react-website-smooth-scroll",
-      link: "https://react-website-smooth-scroll-beta.vercel.app",
-      techStack: ["React", "Styled-component", "React-Scrole"],
-    },
-    {
-      title: "Rick and Morty",
-      description:
-        "This is a test project which helped me to get my first job as a web developer.",
-      repo: "https://github.com/NatiG100/rick-and-morty",
-      link: "https://rick-and-morty-28i917p9k-natig100.vercel.app",
-      techStack: ["Next.js", "Styled-component", "GrapQL"],
-    },
+    // {
+    //   title: "Landing page",
+    //   description:
+    //     "A fully responsive sample landing page with a very attractive UI.",
+    //   repo: "https://github.com/NatiG100/react-website-smooth-scroll",
+    //   link: "https://react-website-smooth-scroll-beta.vercel.app",
+    //   techStack: ["React", "Styled-component", "React-Scrole"],
+    // },
+    // {
+    //   title: "Rick and Morty",
+    //   description:
+    //     "This is a test project which helped me to get my first job as a web developer.",
+    //   repo: "https://github.com/NatiG100/rick-and-morty",
+    //   link: "https://rick-and-morty-28i917p9k-natig100.vercel.app",
+    //   techStack: ["Next.js", "Styled-component", "GrapQL"],
+    // },
   ],
   experience: [
     {
