@@ -92,6 +92,19 @@ export const data = {
         "TypeScript",
       ],
     },
+    {
+      title: "Gratia",
+      description:
+        "A volunteer project where I built a website for a faith-based community, enhancing their online presence and making their resources easily accessible.",
+      link: "https://gratiaethiopia.com/",
+      techStack: [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Sanity CMS",
+      ],
+    },
 
     {
       title: "Chat App",

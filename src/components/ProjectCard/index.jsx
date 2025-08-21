@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import { FaLink, FaGithub } from "react-icons/fa";
+import remytel from "../../assets/img/projects/remytel.png";
 import {
+  StyledCardImage,
+  StyledCardImageWrapper,
+  StyledCardWrapper,
   StyledH1,
   StyledP,
   StyledProjectCard,
@@ -26,42 +30,47 @@ const ProjectCard = ({ link, repo, title, description, techStack = [] }) => {
   });
   return (
     <StyledProjectCard>
-      <StyledProjectCardHeader>
-        <StyledProjectCardIcon />
-        <StyledProjectCardMenu>
-          {link && (
-            <StyledProjectLink href={link} target="_blank">
-              <FaLink />
-            </StyledProjectLink>
-          )}
-          {repo && (
-            <StyledProjectLink href={repo} target="_blank">
-              <FaGithub />
-            </StyledProjectLink>
-          )}
-        </StyledProjectCardMenu>
-      </StyledProjectCardHeader>
-      <StyledProjectCardBody>
-        <StyledH1 className="title">{title}</StyledH1>
-        <StyledP>{description}</StyledP>
-        <StyledTechStack>
-          {!start && (
-            <StyledStepScroller position="left" onClick={moveRight}>
-              <FaChevronLeft />
-            </StyledStepScroller>
-          )}
-          {!end && (
-            <StyledStepScroller position="right" onClick={moveLeft}>
-              <FaChevronRight />
-            </StyledStepScroller>
-          )}
-          <StyledTechStackWrapper className="hide-scroll" ref={scrollRef}>
-            {techStack.map((tech) => (
-              <StyledTech key={tech}>{tech}</StyledTech>
-            ))}
-          </StyledTechStackWrapper>
-        </StyledTechStack>
-      </StyledProjectCardBody>
+      {/* <StyledCardImageWrapper>
+        <img src={remytel} />
+      </StyledCardImageWrapper> */}
+      <StyledCardWrapper>
+        <StyledProjectCardHeader>
+          <StyledProjectCardIcon />
+          <StyledProjectCardMenu>
+            {link && (
+              <StyledProjectLink href={link} target="_blank">
+                <FaLink />
+              </StyledProjectLink>
+            )}
+            {repo && (
+              <StyledProjectLink href={repo} target="_blank">
+                <FaGithub />
+              </StyledProjectLink>
+            )}
+          </StyledProjectCardMenu>
+        </StyledProjectCardHeader>
+        <StyledProjectCardBody>
+          <StyledH1 className="title">{title}</StyledH1>
+          <StyledP>{description}</StyledP>
+          <StyledTechStack>
+            {!start && (
+              <StyledStepScroller position="left" onClick={moveRight}>
+                <FaChevronLeft />
+              </StyledStepScroller>
+            )}
+            {!end && (
+              <StyledStepScroller position="right" onClick={moveLeft}>
+                <FaChevronRight />
+              </StyledStepScroller>
+            )}
+            <StyledTechStackWrapper className="hide-scroll" ref={scrollRef}>
+              {techStack.map((tech) => (
+                <StyledTech key={tech}>{tech}</StyledTech>
+              ))}
+            </StyledTechStackWrapper>
+          </StyledTechStack>
+        </StyledProjectCardBody>
+      </StyledCardWrapper>
     </StyledProjectCard>
   );
 };
